@@ -1,0 +1,2356 @@
+Last login: Sun Jan 10 17:05:01 on ttys001
+bjime488-MacBookPro-MMXV:Pinteresting bjime488$ git add .
+bjime488-MacBookPro-MMXV:Pinteresting bjime488$ git commit -am "Using Mattan's gemfile"
+[master bae9140] Using Mattan's gemfile
+ 1 file changed, 32 insertions(+), 43 deletions(-)
+ rewrite Gemfile (69%)
+bjime488-MacBookPro-MMXV:Pinteresting bjime488$ git push
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 529 bytes | 0 bytes/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+To git@github.com:Zealex/pinteresting.git
+   5505b8d..bae9140  master -> master
+bjime488-MacBookPro-MMXV:Pinteresting bjime488$ git push heroku master
+Counting objects: 41, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (33/33), done.
+Writing objects: 100% (41/41), 280.59 KiB | 0 bytes/s, done.
+Total 41 (delta 19), reused 0 (delta 0)
+remote: Compressing source files... done.
+remote: Building source:
+remote: 
+remote: -----> Using set buildpack heroku/ruby
+remote: -----> Ruby app detected
+remote: -----> Compiling Ruby/Rails
+remote: -----> Using Ruby version: ruby-2.2.3
+remote: -----> Installing dependencies using bundler 1.9.7
+remote:        Running: bundle install --without development:test --path vendor/bundle --binstubs vendor/bundle/bin -j4 --deployment
+remote:        You are trying to install in deployment mode after changing
+remote:        your Gemfile. Run `bundle install` elsewhere and add the
+remote:        updated Gemfile.lock to version control.
+remote:        You have added to the Gemfile:
+remote:        * source: git://github.com/thomas-mcdonald/bootstrap-sass.git (at 3)
+remote:        * rails (= 4.0.0)
+remote:        * sass-rails (~> 4.0.0)
+remote:        * coffee-rails (~> 4.0.0)
+remote:        * jbuilder (~> 1.2)
+remote:        * devise (~> 3.1.0.rc2)
+remote:        * paperclip (~> 3.0)
+remote:        * aws-sdk (~> 1.16.1)
+remote:        * masonry-rails (~> 0.2.0)
+remote:        * will_paginate (~> 3.0)
+remote:        * will_paginate-bootstrap
+remote:        * sdoc
+remote:        You have deleted from the Gemfile:
+remote:        * aws-sdk (< 2.0)
+remote:        * byebug
+remote:        * coffee-rails (~> 4.1.0)
+remote:        * devise (~> 3.5.2)
+remote:        * jbuilder (~> 2.0)
+remote:        * paperclip (~> 4.2)
+remote:        * rails (= 4.2.4)
+remote:        * sass-rails (~> 5.0)
+remote:        * sdoc (~> 0.4.0)
+remote:        * spring
+remote:        * web-console (~> 2.0)
+remote:        Bundler Output: You are trying to install in deployment mode after changing
+remote:        your Gemfile. Run `bundle install` elsewhere and add the
+remote:        updated Gemfile.lock to version control.
+remote:        
+remote:        You have added to the Gemfile:
+remote:        * source: git://github.com/thomas-mcdonald/bootstrap-sass.git (at 3)
+remote:        * rails (= 4.0.0)
+remote:        * sass-rails (~> 4.0.0)
+remote:        * coffee-rails (~> 4.0.0)
+remote:        * jbuilder (~> 1.2)
+remote:        * devise (~> 3.1.0.rc2)
+remote:        * paperclip (~> 3.0)
+remote:        * aws-sdk (~> 1.16.1)
+remote:        * masonry-rails (~> 0.2.0)
+remote:        * will_paginate (~> 3.0)
+remote:        * will_paginate-bootstrap
+remote:        * sdoc
+remote:        
+remote:        You have deleted from the Gemfile:
+remote:        * aws-sdk (< 2.0)
+remote:        * byebug
+remote:        * coffee-rails (~> 4.1.0)
+remote:        * devise (~> 3.5.2)
+remote:        * jbuilder (~> 2.0)
+remote:        * paperclip (~> 4.2)
+remote:        * rails (= 4.2.4)
+remote:        * sass-rails (~> 5.0)
+remote:        * sdoc (~> 0.4.0)
+remote:        * spring
+remote:        * web-console (~> 2.0)
+remote:  !
+remote:  !     Failed to install gems via Bundler.
+remote:  !
+remote: 
+remote:  !     Push rejected, failed to compile Ruby app
+remote: 
+remote: Verifying deploy...
+remote: 
+remote: !	Push rejected to omr-b.
+remote: 
+To https://git.heroku.com/omr-b.git
+ ! [remote rejected] master -> master (pre-receive hook declined)
+error: failed to push some refs to 'https://git.heroku.com/omr-b.git'
+bjime488-MacBookPro-MMXV:Pinteresting bjime488$ bundle install
+Fetching git://github.com/thomas-mcdonald/bootstrap-sass.git
+fatal: ambiguous argument '3': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+Git error: command `git rev-parse 3` in directory
+/Users/bjime488/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/cache/bundler/git/bootstrap-sass-33efd1d8ffb6176fdb805029a30f02a6edfbae2e has failed.
+If this error persists you could try removing the cache directory
+'/Users/bjime488/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/cache/bundler/git/bootstrap-sass-33efd1d8ffb6176fdb805029a30f02a6edfbae2e'
+bjime488-MacBookPro-MMXV:Pinteresting bjime488$ git add .
+bjime488-MacBookPro-MMXV:Pinteresting bjime488$ git commit -am "updated gem file"
+[master 136b36b] updated gem file
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+bjime488-MacBookPro-MMXV:Pinteresting bjime488$ git push
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 291 bytes | 0 bytes/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+To git@github.com:Zealex/pinteresting.git
+   bae9140..136b36b  master -> master
+bjime488-MacBookPro-MMXV:Pinteresting bjime488$ bundle install
+Updating git://github.com/thomas-mcdonald/bootstrap-sass.git
+fatal: ambiguous argument '3': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+Git error: command `git rev-parse 3` in directory
+/Users/bjime488/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/cache/bundler/git/bootstrap-sass-33efd1d8ffb6176fdb805029a30f02a6edfbae2e has failed.
+If this error persists you could try removing the cache directory
+'/Users/bjime488/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/cache/bundler/git/bootstrap-sass-33efd1d8ffb6176fdb805029a30f02a6edfbae2e'
+bjime488-MacBookPro-MMXV:Pinteresting bjime488$ bundle install
+Updating git://github.com/thomas-mcdonald/bootstrap-sass.git
+fatal: ambiguous argument '3': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+Git error: command `git rev-parse 3` in directory
+/Users/bjime488/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/cache/bundler/git/bootstrap-sass-33efd1d8ffb6176fdb805029a30f02a6edfbae2e has failed.
+If this error persists you could try removing the cache directory
+'/Users/bjime488/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/cache/bundler/git/bootstrap-sass-33efd1d8ffb6176fdb805029a30f02a6edfbae2e'
+bjime488-MacBookPro-MMXV:Pinteresting bjime488$ bundle uninstall
+Could not find command "uninstall".
+bjime488-MacBookPro-MMXV:Pinteresting bjime488$ bundle install
+Resolving dependencies...
+Using rake 10.4.2
+Using i18n 0.7.0
+Using json 1.8.3
+Using minitest 5.8.3
+Using thread_safe 0.3.5
+Using tzinfo 1.2.2
+Using activesupport 4.2.4
+Using builder 3.2.2
+Using erubis 2.7.0
+Using mini_portile2 2.0.0
+Using nokogiri 1.6.7.1
+Using rails-deprecated_sanitizer 1.0.3
+Using rails-dom-testing 1.0.7
+Using loofah 2.0.3
+Using rails-html-sanitizer 1.0.2
+Using actionview 4.2.4
+Using rack 1.6.4
+Using rack-test 0.6.3
+Using actionpack 4.2.4
+Using globalid 0.3.6
+Using activejob 4.2.4
+Using mime-types 2.99
+Using mail 2.6.3
+Using actionmailer 4.2.4
+Using activemodel 4.2.4
+Using arel 6.0.3
+Using activerecord 4.2.4
+Using execjs 2.6.0
+Using autoprefixer-rails 6.2.3
+Using aws-sdk-v1 1.66.0
+Using aws-sdk 1.66.0
+Using bcrypt 3.1.10
+Using debug_inspector 0.0.2
+Using binding_of_caller 0.7.2
+Using sass 3.4.20
+Using bootstrap-sass 3.3.6
+Using bundler 1.10.6
+Using byebug 8.2.1
+Using climate_control 0.0.3
+Using cocaine 0.5.8
+Using coffee-script-source 1.10.0
+Using coffee-script 2.4.1
+Using thor 0.19.1
+Using railties 4.2.4
+Using coffee-rails 4.1.1
+Using concurrent-ruby 1.0.0
+Using orm_adapter 0.5.0
+Using responders 2.1.1
+Using warden 1.2.4
+Using devise 3.5.3
+Using multi_json 1.11.2
+Using jbuilder 2.4.0
+Using jquery-rails 4.0.5
+Using turbolinks 2.5.3
+Using jquery-turbolinks 2.1.0
+Using masonry-rails 0.2.4
+Using mimemagic 0.3.0
+Using paperclip 4.3.2
+Using sprockets 3.5.2
+Using sprockets-rails 3.0.0
+Using rails 4.2.4
+Using rdoc 4.2.1
+Using tilt 2.0.2
+Using sass-rails 5.0.4
+Using sdoc 0.4.1
+Using spring 1.6.2
+Using sqlite3 1.3.11
+Using uglifier 2.7.2
+Using web-console 2.2.1
+Using will_paginate 3.0.7
+Using will_paginate-bootstrap 1.0.1
+Bundle complete! 22 Gemfile dependencies, 71 gems now installed.
+Gems in the groups production and productio were not installed.
+Use `bundle show [gemname]` to see where a bundled gem is installed.
+bjime488-MacBookPro-MMXV:Pinteresting bjime488$ git add .
+bjime488-MacBookPro-MMXV:Pinteresting bjime488$ git commit -am "fixed gemfile"
+[master 02cb550] fixed gemfile
+ 2 files changed, 31 insertions(+), 13 deletions(-)
+bjime488-MacBookPro-MMXV:Pinteresting bjime488$ git push
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 939 bytes | 0 bytes/s, done.
+Total 4 (delta 2), reused 0 (delta 0)
+To git@github.com:Zealex/pinteresting.git
+   136b36b..02cb550  master -> master
+bjime488-MacBookPro-MMXV:Pinteresting bjime488$ git push heroku master
+Counting objects: 46, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (38/38), done.
+Writing objects: 100% (46/46), 280.98 KiB | 0 bytes/s, done.
+Total 46 (delta 22), reused 0 (delta 0)
+remote: Compressing source files... done.
+remote: Building source:
+remote: 
+remote: -----> Using set buildpack heroku/ruby
+remote: -----> Ruby app detected
+remote: -----> Compiling Ruby/Rails
+remote: -----> Using Ruby version: ruby-2.2.3
+remote: -----> Installing dependencies using bundler 1.9.7
+remote:        Running: bundle install --without development:test --path vendor/bundle --binstubs vendor/bundle/bin -j4 --deployment
+remote:        Fetching gem metadata from https://rubygems.org/.............
+remote:        Fetching version metadata from https://rubygems.org/...
+remote:        Fetching dependency metadata from https://rubygems.org/..
+remote:        Using json 1.8.3
+remote:        Using rake 10.4.2
+remote:        Using i18n 0.7.0
+remote:        Using thread_safe 0.3.5
+remote:        Using builder 3.2.2
+remote:        Using erubis 2.7.0
+remote:        Using rack 1.6.4
+remote:        Installing mini_portile2 2.0.0
+remote:        Using arel 6.0.3
+remote:        Using execjs 2.6.0
+remote:        Using bcrypt 3.1.10
+remote:        Installing mime-types 2.99
+remote:        Installing minitest 5.8.3
+remote:        Using thor 0.19.1
+remote:        Installing coffee-script-source 1.10.0
+remote:        Using orm_adapter 0.5.0
+remote:        Using multi_json 1.11.2
+remote:        Using mimemagic 0.3.0
+remote:        Using pg 0.18.4
+remote:        Using bundler 1.9.7
+remote:        Using rails_serve_static_assets 0.0.4
+remote:        Using rails_stdout_logging 0.0.4
+remote:        Installing concurrent-ruby 1.0.0
+remote:        Using will_paginate 3.0.7
+remote:        Installing sass 3.4.20
+remote:        Using tzinfo 1.2.2
+remote:        Using rack-test 0.6.3
+remote:        Using warden 1.2.4
+remote:        Installing tilt 2.0.2
+remote:        Using autoprefixer-rails 6.2.3
+remote:        Using uglifier 2.7.2
+remote:        Using mail 2.6.3
+remote:        Using coffee-script 2.4.1
+remote:        Using rails_12factor 0.0.3
+remote:        Installing rdoc 4.2.1
+remote:        Using will_paginate-bootstrap 1.0.1
+remote:        Using activesupport 4.2.4
+remote:        Using bootstrap-sass 3.3.6
+remote:        Using sdoc 0.4.1
+remote:        Using rails-deprecated_sanitizer 1.0.3
+remote:        Using globalid 0.3.6
+remote:        Using activemodel 4.2.4
+remote:        Using climate_control 0.0.3
+remote:        Installing sprockets 3.5.2
+remote:        Using activejob 4.2.4
+remote:        Using activerecord 4.2.4
+remote:        Using cocaine 0.5.8
+remote:        Using paperclip 4.3.2
+remote:        Installing jbuilder 2.4.0
+remote:        Installing nokogiri 1.6.7.1
+remote:        Using rails-dom-testing 1.0.7
+remote:        Using loofah 2.0.3
+remote:        Using aws-sdk-v1 1.66.0
+remote:        Using rails-html-sanitizer 1.0.2
+remote:        Using actionview 4.2.4
+remote:        Using actionpack 4.2.4
+remote:        Using actionmailer 4.2.4
+remote:        Using railties 4.2.4
+remote:        Using responders 2.1.1
+remote:        Using jquery-rails 4.0.5
+remote:        Using masonry-rails 0.2.4
+remote:        Using aws-sdk 1.66.0
+remote:        Using devise 3.5.3
+remote:        Installing coffee-rails 4.1.1
+remote:        Using turbolinks 2.5.3
+remote:        Using jquery-turbolinks 2.1.0
+remote:        Installing sprockets-rails 3.0.0
+remote:        Using rails 4.2.4
+remote:        Using sass-rails 5.0.4
+remote:        Bundle complete! 22 Gemfile dependencies, 69 gems now installed.
+remote:        Gems in the groups development and test were not installed.
+remote:        Bundled gems are installed into ./vendor/bundle.
+remote:        Post-install message from rdoc:
+remote:        Depending on your version of ruby, you may need to install ruby rdoc/ri data:
+remote:        <= 1.8.6 : unsupported
+remote:        = 1.8.7 : gem install rdoc-data; rdoc-data --install
+remote:        = 1.9.1 : gem install rdoc-data; rdoc-data --install
+remote:        >= 1.9.2 : nothing to do! Yay!
+remote:        Bundle completed (11.56s)
+remote:        Cleaning up the bundler cache.
+remote:        Removing nokogiri (1.6.6.2)
+remote:        Removing mime-types (2.6.2)
+remote:        Removing sprockets (3.4.0)
+remote:        Removing tilt (2.0.1)
+remote:        Removing jbuilder (2.3.2)
+remote:        Removing coffee-script-source (1.9.1.1)
+remote:        Removing mini_portile (0.6.2)
+remote:        Removing minitest (5.8.2)
+remote:        Removing sprockets-rails (2.3.3)
+remote:        Removing coffee-rails (4.1.0)
+remote:        Removing sass (3.4.19)
+remote: -----> Preparing app for Rails asset pipeline
+remote:        Running: rake assets:precompile
+remote:        rake aborted!
+remote:        SyntaxError: /tmp/build_9972965ff74c2133aea45b1eb01c9847/config/environments/production.rb:81: syntax error, unexpected =>
+remote:        ...efault_url_options = { host: => 'pinteresting-b.herokuapp.co...
+remote:        ...                               ^
+remote:        /tmp/build_9972965ff74c2133aea45b1eb01c9847/config/environments/production.rb:81: syntax error, unexpected '}', expecting keyword_end
+remote:        /tmp/build_9972965ff74c2133aea45b1eb01c9847/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `require'
+remote:        /tmp/build_9972965ff74c2133aea45b1eb01c9847/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `block in require'
+remote:        /tmp/build_9972965ff74c2133aea45b1eb01c9847/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:240:in `load_dependency'
+remote:        /tmp/build_9972965ff74c2133aea45b1eb01c9847/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `require'
+remote:        /tmp/build_9972965ff74c2133aea45b1eb01c9847/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/engine.rb:598:in `block (2 levels) in <class:Engine>'
+remote:        /tmp/build_9972965ff74c2133aea45b1eb01c9847/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/engine.rb:597:in `each'
+remote:        /tmp/build_9972965ff74c2133aea45b1eb01c9847/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/engine.rb:597:in `block in <class:Engine>'
+remote:        /tmp/build_9972965ff74c2133aea45b1eb01c9847/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/initializable.rb:30:in `instance_exec'
+remote:        /tmp/build_9972965ff74c2133aea45b1eb01c9847/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/initializable.rb:30:in `run'
+remote:        /tmp/build_9972965ff74c2133aea45b1eb01c9847/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/initializable.rb:55:in `block in run_initializers'
+remote:        /tmp/build_9972965ff74c2133aea45b1eb01c9847/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/initializable.rb:44:in `each'
+remote:        /tmp/build_9972965ff74c2133aea45b1eb01c9847/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/initializable.rb:44:in `tsort_each_child'
+remote:        /tmp/build_9972965ff74c2133aea45b1eb01c9847/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/initializable.rb:54:in `run_initializers'
+remote:        /tmp/build_9972965ff74c2133aea45b1eb01c9847/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/application.rb:352:in `initialize!'
+remote:        /tmp/build_9972965ff74c2133aea45b1eb01c9847/config/environment.rb:5:in `<top (required)>'
+remote:        /tmp/build_9972965ff74c2133aea45b1eb01c9847/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `require'
+remote:        /tmp/build_9972965ff74c2133aea45b1eb01c9847/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `block in require'
+remote:        /tmp/build_9972965ff74c2133aea45b1eb01c9847/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:240:in `load_dependency'
+remote:        /tmp/build_9972965ff74c2133aea45b1eb01c9847/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `require'
+remote:        /tmp/build_9972965ff74c2133aea45b1eb01c9847/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/application.rb:328:in `require_environment!'
+remote:        /tmp/build_9972965ff74c2133aea45b1eb01c9847/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/application.rb:457:in `block in run_tasks_blocks'
+remote:        /tmp/build_9972965ff74c2133aea45b1eb01c9847/vendor/bundle/ruby/2.2.0/gems/sprockets-rails-3.0.0/lib/sprockets/rails/task.rb:62:in `block (2 levels) in define'
+remote:        Tasks: TOP => environment
+remote:        (See full trace by running task with --trace)
+remote:  !
+remote:  !     Precompiling assets failed.
+remote:  !
+remote: 
+remote:  !     Push rejected, failed to compile Ruby app
+remote: 
+remote: Verifying deploy...
+remote: 
+remote: !	Push rejected to omr-b.
+remote: 
+To https://git.heroku.com/omr-b.git
+ ! [remote rejected] master -> master (pre-receive hook declined)
+error: failed to push some refs to 'https://git.heroku.com/omr-b.git'
+bjime488-MacBookPro-MMXV:Pinteresting bjime488$ heroku open
+Opening omr-b... done
+bjime488-MacBookPro-MMXV:Pinteresting bjime488$ git add .
+bjime488-MacBookPro-MMXV:Pinteresting bjime488$ git commit -am "fixed the heroku issue"
+[master babef64] fixed the heroku issue
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+bjime488-MacBookPro-MMXV:Pinteresting bjime488$ git push
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 483 bytes | 0 bytes/s, done.
+Total 5 (delta 3), reused 0 (delta 0)
+To git@github.com:Zealex/pinteresting.git
+   02cb550..babef64  master -> master
+bjime488-MacBookPro-MMXV:Pinteresting bjime488$ git push heroku master
+Counting objects: 51, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (43/43), done.
+Writing objects: 100% (51/51), 281.39 KiB | 0 bytes/s, done.
+Total 51 (delta 25), reused 0 (delta 0)
+remote: Compressing source files... done.
+remote: Building source:
+remote: 
+remote: -----> Using set buildpack heroku/ruby
+remote: -----> Ruby app detected
+remote: -----> Compiling Ruby/Rails
+remote: -----> Using Ruby version: ruby-2.2.3
+remote: -----> Installing dependencies using bundler 1.9.7
+remote:        Running: bundle install --without development:test --path vendor/bundle --binstubs vendor/bundle/bin -j4 --deployment
+remote:        Fetching gem metadata from https://rubygems.org/.............
+remote:        Fetching version metadata from https://rubygems.org/...
+remote:        Fetching dependency metadata from https://rubygems.org/..
+remote:        Using rake 10.4.2
+remote:        Using json 1.8.3
+remote:        Using i18n 0.7.0
+remote:        Using thread_safe 0.3.5
+remote:        Using builder 3.2.2
+remote:        Using erubis 2.7.0
+remote:        Using rack 1.6.4
+remote:        Installing minitest 5.8.3
+remote:        Using arel 6.0.3
+remote:        Using execjs 2.6.0
+remote:        Using bcrypt 3.1.10
+remote:        Installing mime-types 2.99
+remote:        Installing mini_portile2 2.0.0
+remote:        Using thor 0.19.1
+remote:        Installing coffee-script-source 1.10.0
+remote:        Using orm_adapter 0.5.0
+remote:        Using multi_json 1.11.2
+remote:        Using mimemagic 0.3.0
+remote:        Using pg 0.18.4
+remote:        Using bundler 1.9.7
+remote:        Using rails_serve_static_assets 0.0.4
+remote:        Using rails_stdout_logging 0.0.4
+remote:        Installing concurrent-ruby 1.0.0
+remote:        Using will_paginate 3.0.7
+remote:        Installing sass 3.4.20
+remote:        Using tzinfo 1.2.2
+remote:        Using rack-test 0.6.3
+remote:        Using warden 1.2.4
+remote:        Using autoprefixer-rails 6.2.3
+remote:        Using uglifier 2.7.2
+remote:        Using mail 2.6.3
+remote:        Installing tilt 2.0.2
+remote:        Using coffee-script 2.4.1
+remote:        Using rails_12factor 0.0.3
+remote:        Installing rdoc 4.2.1
+remote:        Using will_paginate-bootstrap 1.0.1
+remote:        Using activesupport 4.2.4
+remote:        Using bootstrap-sass 3.3.6
+remote:        Using sdoc 0.4.1
+remote:        Using rails-deprecated_sanitizer 1.0.3
+remote:        Using globalid 0.3.6
+remote:        Using activemodel 4.2.4
+remote:        Using climate_control 0.0.3
+remote:        Installing sprockets 3.5.2
+remote:        Using activejob 4.2.4
+remote:        Using activerecord 4.2.4
+remote:        Using cocaine 0.5.8
+remote:        Using paperclip 4.3.2
+remote:        Installing jbuilder 2.4.0
+remote:        Installing nokogiri 1.6.7.1
+remote:        Using rails-dom-testing 1.0.7
+remote:        Using aws-sdk-v1 1.66.0
+remote:        Using loofah 2.0.3
+remote:        Using aws-sdk 1.66.0
+remote:        Using rails-html-sanitizer 1.0.2
+remote:        Using actionview 4.2.4
+remote:        Using actionpack 4.2.4
+remote:        Using actionmailer 4.2.4
+remote:        Using railties 4.2.4
+remote:        Using responders 2.1.1
+remote:        Using jquery-rails 4.0.5
+remote:        Using masonry-rails 0.2.4
+remote:        Using devise 3.5.3
+remote:        Installing sprockets-rails 3.0.0
+remote:        Using sass-rails 5.0.4
+remote:        Using rails 4.2.4
+remote:        Installing coffee-rails 4.1.1
+remote:        Using turbolinks 2.5.3
+remote:        Using jquery-turbolinks 2.1.0
+remote:        Bundle complete! 22 Gemfile dependencies, 69 gems now installed.
+remote:        Gems in the groups development and test were not installed.
+remote:        Bundled gems are installed into ./vendor/bundle.
+remote:        Post-install message from rdoc:
+remote:        Depending on your version of ruby, you may need to install ruby rdoc/ri data:
+remote:        <= 1.8.6 : unsupported
+remote:        = 1.8.7 : gem install rdoc-data; rdoc-data --install
+remote:        = 1.9.1 : gem install rdoc-data; rdoc-data --install
+remote:        >= 1.9.2 : nothing to do! Yay!
+remote:        Bundle completed (12.22s)
+remote:        Cleaning up the bundler cache.
+remote:        Removing sass (3.4.19)
+remote:        Removing nokogiri (1.6.6.2)
+remote:        Removing coffee-script-source (1.9.1.1)
+remote:        Removing sprockets (3.4.0)
+remote:        Removing jbuilder (2.3.2)
+remote:        Removing mini_portile (0.6.2)
+remote:        Removing minitest (5.8.2)
+remote:        Removing tilt (2.0.1)
+remote:        Removing coffee-rails (4.1.0)
+remote:        Removing sprockets-rails (2.3.3)
+remote:        Removing mime-types (2.6.2)
+remote: -----> Preparing app for Rails asset pipeline
+remote:        Running: rake assets:precompile
+remote:        rake aborted!
+remote:        SyntaxError: /tmp/build_f05fa9697866344f06075c2f20001109/config/environments/production.rb:81: syntax error, unexpected =>
+remote:        ...efault_url_options = { host: => 'omr-b.herokuapp.com' }
+remote:        ...                               ^
+remote:        /tmp/build_f05fa9697866344f06075c2f20001109/config/environments/production.rb:81: syntax error, unexpected '}', expecting keyword_end
+remote:        /tmp/build_f05fa9697866344f06075c2f20001109/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `require'
+remote:        /tmp/build_f05fa9697866344f06075c2f20001109/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `block in require'
+remote:        /tmp/build_f05fa9697866344f06075c2f20001109/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:240:in `load_dependency'
+remote:        /tmp/build_f05fa9697866344f06075c2f20001109/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `require'
+remote:        /tmp/build_f05fa9697866344f06075c2f20001109/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/engine.rb:598:in `block (2 levels) in <class:Engine>'
+remote:        /tmp/build_f05fa9697866344f06075c2f20001109/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/engine.rb:597:in `each'
+remote:        /tmp/build_f05fa9697866344f06075c2f20001109/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/engine.rb:597:in `block in <class:Engine>'
+remote:        /tmp/build_f05fa9697866344f06075c2f20001109/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/initializable.rb:30:in `instance_exec'
+remote:        /tmp/build_f05fa9697866344f06075c2f20001109/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/initializable.rb:30:in `run'
+remote:        /tmp/build_f05fa9697866344f06075c2f20001109/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/initializable.rb:55:in `block in run_initializers'
+remote:        /tmp/build_f05fa9697866344f06075c2f20001109/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/initializable.rb:44:in `each'
+remote:        /tmp/build_f05fa9697866344f06075c2f20001109/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/initializable.rb:44:in `tsort_each_child'
+remote:        /tmp/build_f05fa9697866344f06075c2f20001109/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/initializable.rb:54:in `run_initializers'
+remote:        /tmp/build_f05fa9697866344f06075c2f20001109/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/application.rb:352:in `initialize!'
+remote:        /tmp/build_f05fa9697866344f06075c2f20001109/config/environment.rb:5:in `<top (required)>'
+remote:        /tmp/build_f05fa9697866344f06075c2f20001109/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `require'
+remote:        /tmp/build_f05fa9697866344f06075c2f20001109/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `block in require'
+remote:        /tmp/build_f05fa9697866344f06075c2f20001109/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:240:in `load_dependency'
+remote:        /tmp/build_f05fa9697866344f06075c2f20001109/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `require'
+remote:        /tmp/build_f05fa9697866344f06075c2f20001109/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/application.rb:328:in `require_environment!'
+remote:        /tmp/build_f05fa9697866344f06075c2f20001109/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/application.rb:457:in `block in run_tasks_blocks'
+remote:        /tmp/build_f05fa9697866344f06075c2f20001109/vendor/bundle/ruby/2.2.0/gems/sprockets-rails-3.0.0/lib/sprockets/rails/task.rb:62:in `block (2 levels) in define'
+remote:        Tasks: TOP => environment
+remote:        (See full trace by running task with --trace)
+remote:  !
+remote:  !     Precompiling assets failed.
+remote:  !
+remote: 
+remote:  !     Push rejected, failed to compile Ruby app
+remote: 
+remote: Verifying deploy....
+remote: 
+remote: !	Push rejected to omr-b.
+remote: 
+To https://git.heroku.com/omr-b.git
+ ! [remote rejected] master -> master (pre-receive hook declined)
+error: failed to push some refs to 'https://git.heroku.com/omr-b.git'
+bjime488-MacBookPro-MMXV:Pinteresting bjime488$ git push heroku master
+Counting objects: 51, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (43/43), done.
+Writing objects: 100% (51/51), 281.39 KiB | 0 bytes/s, done.
+Total 51 (delta 25), reused 0 (delta 0)
+remote: Compressing source files... done.
+remote: Building source:
+remote: 
+remote: -----> Using set buildpack heroku/ruby
+remote: -----> Ruby app detected
+remote: -----> Compiling Ruby/Rails
+remote: -----> Using Ruby version: ruby-2.2.3
+remote: -----> Installing dependencies using bundler 1.9.7
+remote:        Running: bundle install --without development:test --path vendor/bundle --binstubs vendor/bundle/bin -j4 --deployment
+remote:        Fetching gem metadata from https://rubygems.org/.............
+remote:        Fetching version metadata from https://rubygems.org/...
+remote:        Fetching dependency metadata from https://rubygems.org/..
+remote:        Using rake 10.4.2
+remote:        Using i18n 0.7.0
+remote:        Using json 1.8.3
+remote:        Using thread_safe 0.3.5
+remote:        Using builder 3.2.2
+remote:        Using erubis 2.7.0
+remote:        Using rack 1.6.4
+remote:        Installing mini_portile2 2.0.0
+remote:        Using arel 6.0.3
+remote:        Using execjs 2.6.0
+remote:        Using bcrypt 3.1.10
+remote:        Installing minitest 5.8.3
+remote:        Installing mime-types 2.99
+remote:        Using thor 0.19.1
+remote:        Installing coffee-script-source 1.10.0
+remote:        Using orm_adapter 0.5.0
+remote:        Using multi_json 1.11.2
+remote:        Using mimemagic 0.3.0
+remote:        Using pg 0.18.4
+remote:        Using bundler 1.9.7
+remote:        Using rails_serve_static_assets 0.0.4
+remote:        Using rails_stdout_logging 0.0.4
+remote:        Installing sass 3.4.20
+remote:        Using will_paginate 3.0.7
+remote:        Installing concurrent-ruby 1.0.0
+remote:        Using tzinfo 1.2.2
+remote:        Using rack-test 0.6.3
+remote:        Using warden 1.2.4
+remote:        Installing tilt 2.0.2
+remote:        Using autoprefixer-rails 6.2.3
+remote:        Using uglifier 2.7.2
+remote:        Using mail 2.6.3
+remote:        Using coffee-script 2.4.1
+remote:        Using rails_12factor 0.0.3
+remote:        Using will_paginate-bootstrap 1.0.1
+remote:        Installing rdoc 4.2.1
+remote:        Using activesupport 4.2.4
+remote:        Using bootstrap-sass 3.3.6
+remote:        Using sdoc 0.4.1
+remote:        Using rails-deprecated_sanitizer 1.0.3
+remote:        Using globalid 0.3.6
+remote:        Using activemodel 4.2.4
+remote:        Using climate_control 0.0.3
+remote:        Installing sprockets 3.5.2
+remote:        Using activejob 4.2.4
+remote:        Using activerecord 4.2.4
+remote:        Using cocaine 0.5.8
+remote:        Using paperclip 4.3.2
+remote:        Installing jbuilder 2.4.0
+remote:        Installing nokogiri 1.6.7.1
+remote:        Using rails-dom-testing 1.0.7
+remote:        Using loofah 2.0.3
+remote:        Using aws-sdk-v1 1.66.0
+remote:        Using rails-html-sanitizer 1.0.2
+remote:        Using aws-sdk 1.66.0
+remote:        Using actionview 4.2.4
+remote:        Using actionpack 4.2.4
+remote:        Using actionmailer 4.2.4
+remote:        Using railties 4.2.4
+remote:        Using responders 2.1.1
+remote:        Using jquery-rails 4.0.5
+remote:        Using masonry-rails 0.2.4
+remote:        Using devise 3.5.3
+remote:        Installing coffee-rails 4.1.1
+remote:        Installing sprockets-rails 3.0.0
+remote:        Using turbolinks 2.5.3
+remote:        Using jquery-turbolinks 2.1.0
+remote:        Using rails 4.2.4
+remote:        Using sass-rails 5.0.4
+remote:        Bundle complete! 22 Gemfile dependencies, 69 gems now installed.
+remote:        Gems in the groups development and test were not installed.
+remote:        Bundled gems are installed into ./vendor/bundle.
+remote:        Post-install message from rdoc:
+remote:        Depending on your version of ruby, you may need to install ruby rdoc/ri data:
+remote:        <= 1.8.6 : unsupported
+remote:        = 1.8.7 : gem install rdoc-data; rdoc-data --install
+remote:        = 1.9.1 : gem install rdoc-data; rdoc-data --install
+remote:        >= 1.9.2 : nothing to do! Yay!
+remote:        Bundle completed (11.51s)
+remote:        Cleaning up the bundler cache.
+remote:        Removing nokogiri (1.6.6.2)
+remote:        Removing sass (3.4.19)
+remote:        Removing minitest (5.8.2)
+remote:        Removing sprockets (3.4.0)
+remote:        Removing sprockets-rails (2.3.3)
+remote:        Removing tilt (2.0.1)
+remote:        Removing mini_portile (0.6.2)
+remote:        Removing jbuilder (2.3.2)
+remote:        Removing mime-types (2.6.2)
+remote:        Removing coffee-rails (4.1.0)
+remote:        Removing coffee-script-source (1.9.1.1)
+remote: -----> Preparing app for Rails asset pipeline
+remote:        Running: rake assets:precompile
+remote:        rake aborted!
+remote:        SyntaxError: /tmp/build_5e435616b0c0afbb27576b12940ace84/config/environments/production.rb:81: syntax error, unexpected =>
+remote:        ...efault_url_options = { host: => 'omr-b.herokuapp.com' }
+remote:        ...                               ^
+remote:        /tmp/build_5e435616b0c0afbb27576b12940ace84/config/environments/production.rb:81: syntax error, unexpected '}', expecting keyword_end
+remote:        /tmp/build_5e435616b0c0afbb27576b12940ace84/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `require'
+remote:        /tmp/build_5e435616b0c0afbb27576b12940ace84/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `block in require'
+remote:        /tmp/build_5e435616b0c0afbb27576b12940ace84/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:240:in `load_dependency'
+remote:        /tmp/build_5e435616b0c0afbb27576b12940ace84/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `require'
+remote:        /tmp/build_5e435616b0c0afbb27576b12940ace84/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/engine.rb:598:in `block (2 levels) in <class:Engine>'
+remote:        /tmp/build_5e435616b0c0afbb27576b12940ace84/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/engine.rb:597:in `each'
+remote:        /tmp/build_5e435616b0c0afbb27576b12940ace84/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/engine.rb:597:in `block in <class:Engine>'
+remote:        /tmp/build_5e435616b0c0afbb27576b12940ace84/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/initializable.rb:30:in `instance_exec'
+remote:        /tmp/build_5e435616b0c0afbb27576b12940ace84/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/initializable.rb:30:in `run'
+remote:        /tmp/build_5e435616b0c0afbb27576b12940ace84/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/initializable.rb:55:in `block in run_initializers'
+remote:        /tmp/build_5e435616b0c0afbb27576b12940ace84/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/initializable.rb:44:in `each'
+remote:        /tmp/build_5e435616b0c0afbb27576b12940ace84/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/initializable.rb:44:in `tsort_each_child'
+remote:        /tmp/build_5e435616b0c0afbb27576b12940ace84/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/initializable.rb:54:in `run_initializers'
+remote:        /tmp/build_5e435616b0c0afbb27576b12940ace84/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/application.rb:352:in `initialize!'
+remote:        /tmp/build_5e435616b0c0afbb27576b12940ace84/config/environment.rb:5:in `<top (required)>'
+remote:        /tmp/build_5e435616b0c0afbb27576b12940ace84/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `require'
+remote:        /tmp/build_5e435616b0c0afbb27576b12940ace84/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `block in require'
+remote:        /tmp/build_5e435616b0c0afbb27576b12940ace84/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:240:in `load_dependency'
+remote:        /tmp/build_5e435616b0c0afbb27576b12940ace84/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `require'
+remote:        /tmp/build_5e435616b0c0afbb27576b12940ace84/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/application.rb:328:in `require_environment!'
+remote:        /tmp/build_5e435616b0c0afbb27576b12940ace84/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/application.rb:457:in `block in run_tasks_blocks'
+remote:        /tmp/build_5e435616b0c0afbb27576b12940ace84/vendor/bundle/ruby/2.2.0/gems/sprockets-rails-3.0.0/lib/sprockets/rails/task.rb:62:in `block (2 levels) in define'
+remote:        Tasks: TOP => environment
+remote:        (See full trace by running task with --trace)
+remote:  !
+remote:  !     Precompiling assets failed.
+remote:  !
+remote: 
+remote:  !     Push rejected, failed to compile Ruby app
+remote: 
+remote: Verifying deploy...
+remote: 
+remote: !	Push rejected to omr-b.
+remote: 
+To https://git.heroku.com/omr-b.git
+ ! [remote rejected] master -> master (pre-receive hook declined)
+error: failed to push some refs to 'https://git.heroku.com/omr-b.git'
+bjime488-MacBookPro-MMXV:Pinteresting bjime488$ git push heroku master
+Counting objects: 51, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (43/43), done.
+Writing objects: 100% (51/51), 281.39 KiB | 0 bytes/s, done.
+Total 51 (delta 25), reused 0 (delta 0)
+remote: Compressing source files... done.
+remote: Building source:
+remote: 
+remote: -----> Using set buildpack heroku/ruby
+remote: -----> Ruby app detected
+remote: -----> Compiling Ruby/Rails
+remote: -----> Using Ruby version: ruby-2.2.3
+remote: -----> Installing dependencies using bundler 1.9.7
+remote:        Running: bundle install --without development:test --path vendor/bundle --binstubs vendor/bundle/bin -j4 --deployment
+remote:        Fetching gem metadata from https://rubygems.org/.............
+remote:        Fetching version metadata from https://rubygems.org/...
+remote:        Fetching dependency metadata from https://rubygems.org/..
+remote:        Using rake 10.4.2
+remote:        Using i18n 0.7.0
+remote:        Using json 1.8.3
+remote:        Using thread_safe 0.3.5
+remote:        Using builder 3.2.2
+remote:        Using erubis 2.7.0
+remote:        Using rack 1.6.4
+remote:        Installing mime-types 2.99
+remote:        Using arel 6.0.3
+remote:        Using execjs 2.6.0
+remote:        Using bcrypt 3.1.10
+remote:        Installing minitest 5.8.3
+remote:        Installing mini_portile2 2.0.0
+remote:        Using thor 0.19.1
+remote:        Installing coffee-script-source 1.10.0
+remote:        Using orm_adapter 0.5.0
+remote:        Using multi_json 1.11.2
+remote:        Using mimemagic 0.3.0
+remote:        Using pg 0.18.4
+remote:        Using bundler 1.9.7
+remote:        Using rails_serve_static_assets 0.0.4
+remote:        Using rails_stdout_logging 0.0.4
+remote:        Installing concurrent-ruby 1.0.0
+remote:        Using will_paginate 3.0.7
+remote:        Installing sass 3.4.20
+remote:        Using tzinfo 1.2.2
+remote:        Using rack-test 0.6.3
+remote:        Using warden 1.2.4
+remote:        Using mail 2.6.3
+remote:        Using autoprefixer-rails 6.2.3
+remote:        Using uglifier 2.7.2
+remote:        Installing tilt 2.0.2
+remote:        Using coffee-script 2.4.1
+remote:        Using rails_12factor 0.0.3
+remote:        Installing rdoc 4.2.1
+remote:        Using will_paginate-bootstrap 1.0.1
+remote:        Using activesupport 4.2.4
+remote:        Using bootstrap-sass 3.3.6
+remote:        Using sdoc 0.4.1
+remote:        Using rails-deprecated_sanitizer 1.0.3
+remote:        Using globalid 0.3.6
+remote:        Using activemodel 4.2.4
+remote:        Using climate_control 0.0.3
+remote:        Installing sprockets 3.5.2
+remote:        Using activejob 4.2.4
+remote:        Using activerecord 4.2.4
+remote:        Using cocaine 0.5.8
+remote:        Using paperclip 4.3.2
+remote:        Installing jbuilder 2.4.0
+remote:        Installing nokogiri 1.6.7.1
+remote:        Using rails-dom-testing 1.0.7
+remote:        Using loofah 2.0.3
+remote:        Using aws-sdk-v1 1.66.0
+remote:        Using rails-html-sanitizer 1.0.2
+remote:        Using actionview 4.2.4
+remote:        Using aws-sdk 1.66.0
+remote:        Using actionpack 4.2.4
+remote:        Using actionmailer 4.2.4
+remote:        Using railties 4.2.4
+remote:        Using responders 2.1.1
+remote:        Using jquery-rails 4.0.5
+remote:        Using masonry-rails 0.2.4
+remote:        Using devise 3.5.3
+remote:        Installing coffee-rails 4.1.1
+remote:        Using turbolinks 2.5.3
+remote:        Using jquery-turbolinks 2.1.0
+remote:        Installing sprockets-rails 3.0.0
+remote:        Using rails 4.2.4
+remote:        Using sass-rails 5.0.4
+remote:        Bundle complete! 22 Gemfile dependencies, 69 gems now installed.
+remote:        Gems in the groups development and test were not installed.
+remote:        Bundled gems are installed into ./vendor/bundle.
+remote:        Post-install message from rdoc:
+remote:        Depending on your version of ruby, you may need to install ruby rdoc/ri data:
+remote:        <= 1.8.6 : unsupported
+remote:        = 1.8.7 : gem install rdoc-data; rdoc-data --install
+remote:        = 1.9.1 : gem install rdoc-data; rdoc-data --install
+remote:        >= 1.9.2 : nothing to do! Yay!
+remote:        Bundle completed (11.39s)
+remote:        Cleaning up the bundler cache.
+remote:        Removing sprockets-rails (2.3.3)
+remote:        Removing jbuilder (2.3.2)
+remote:        Removing sass (3.4.19)
+remote:        Removing mime-types (2.6.2)
+remote:        Removing nokogiri (1.6.6.2)
+remote:        Removing sprockets (3.4.0)
+remote:        Removing coffee-script-source (1.9.1.1)
+remote:        Removing coffee-rails (4.1.0)
+remote:        Removing minitest (5.8.2)
+remote:        Removing mini_portile (0.6.2)
+remote:        Removing tilt (2.0.1)
+remote: -----> Preparing app for Rails asset pipeline
+remote:        Running: rake assets:precompile
+remote:        rake aborted!
+remote:        SyntaxError: /tmp/build_89e941a30d90b17b59f443c81c6ca71f/config/environments/production.rb:81: syntax error, unexpected =>
+remote:        ...efault_url_options = { host: => 'omr-b.herokuapp.com' }
+remote:        ...                               ^
+remote:        /tmp/build_89e941a30d90b17b59f443c81c6ca71f/config/environments/production.rb:81: syntax error, unexpected '}', expecting keyword_end
+remote:        /tmp/build_89e941a30d90b17b59f443c81c6ca71f/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `require'
+remote:        /tmp/build_89e941a30d90b17b59f443c81c6ca71f/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `block in require'
+remote:        /tmp/build_89e941a30d90b17b59f443c81c6ca71f/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:240:in `load_dependency'
+remote:        /tmp/build_89e941a30d90b17b59f443c81c6ca71f/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `require'
+remote:        /tmp/build_89e941a30d90b17b59f443c81c6ca71f/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/engine.rb:598:in `block (2 levels) in <class:Engine>'
+remote:        /tmp/build_89e941a30d90b17b59f443c81c6ca71f/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/engine.rb:597:in `each'
+remote:        /tmp/build_89e941a30d90b17b59f443c81c6ca71f/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/engine.rb:597:in `block in <class:Engine>'
+remote:        /tmp/build_89e941a30d90b17b59f443c81c6ca71f/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/initializable.rb:30:in `instance_exec'
+remote:        /tmp/build_89e941a30d90b17b59f443c81c6ca71f/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/initializable.rb:30:in `run'
+remote:        /tmp/build_89e941a30d90b17b59f443c81c6ca71f/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/initializable.rb:55:in `block in run_initializers'
+remote:        /tmp/build_89e941a30d90b17b59f443c81c6ca71f/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/initializable.rb:44:in `each'
+remote:        /tmp/build_89e941a30d90b17b59f443c81c6ca71f/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/initializable.rb:44:in `tsort_each_child'
+remote:        /tmp/build_89e941a30d90b17b59f443c81c6ca71f/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/initializable.rb:54:in `run_initializers'
+remote:        /tmp/build_89e941a30d90b17b59f443c81c6ca71f/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/application.rb:352:in `initialize!'
+remote:        /tmp/build_89e941a30d90b17b59f443c81c6ca71f/config/environment.rb:5:in `<top (required)>'
+remote:        /tmp/build_89e941a30d90b17b59f443c81c6ca71f/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `require'
+remote:        /tmp/build_89e941a30d90b17b59f443c81c6ca71f/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `block in require'
+remote:        /tmp/build_89e941a30d90b17b59f443c81c6ca71f/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:240:in `load_dependency'
+remote:        /tmp/build_89e941a30d90b17b59f443c81c6ca71f/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `require'
+remote:        /tmp/build_89e941a30d90b17b59f443c81c6ca71f/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/application.rb:328:in `require_environment!'
+remote:        /tmp/build_89e941a30d90b17b59f443c81c6ca71f/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/application.rb:457:in `block in run_tasks_blocks'
+remote:        /tmp/build_89e941a30d90b17b59f443c81c6ca71f/vendor/bundle/ruby/2.2.0/gems/sprockets-rails-3.0.0/lib/sprockets/rails/task.rb:62:in `block (2 levels) in define'
+remote:        Tasks: TOP => environment
+remote:        (See full trace by running task with --trace)
+remote:  !
+remote:  !     Precompiling assets failed.
+remote:  !
+remote: 
+remote:  !     Push rejected, failed to compile Ruby app
+remote: 
+remote: Verifying deploy...
+remote: 
+remote: !	Push rejected to omr-b.
+remote: 
+To https://git.heroku.com/omr-b.git
+ ! [remote rejected] master -> master (pre-receive hook declined)
+error: failed to push some refs to 'https://git.heroku.com/omr-b.git'
+bjime488-MacBookPro-MMXV:Pinteresting bjime488$ git push heroku master
+Counting objects: 51, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (43/43), done.
+Writing objects: 100% (51/51), 281.39 KiB | 0 bytes/s, done.
+Total 51 (delta 25), reused 0 (delta 0)
+remote: Compressing source files... done.
+remote: Building source:
+remote: 
+remote: -----> Using set buildpack heroku/ruby
+remote: -----> Ruby app detected
+remote: -----> Compiling Ruby/Rails
+remote: -----> Using Ruby version: ruby-2.2.3
+remote: -----> Installing dependencies using bundler 1.9.7
+remote:        Running: bundle install --without development:test --path vendor/bundle --binstubs vendor/bundle/bin -j4 --deployment
+remote:        Fetching gem metadata from https://rubygems.org/.............
+remote:        Fetching version metadata from https://rubygems.org/...
+remote:        Fetching dependency metadata from https://rubygems.org/..
+remote:        Using rake 10.4.2
+remote:        Using i18n 0.7.0
+remote:        Using json 1.8.3
+remote:        Using thread_safe 0.3.5
+remote:        Using builder 3.2.2
+remote:        Using erubis 2.7.0
+remote:        Using rack 1.6.4
+remote:        Installing mini_portile2 2.0.0
+remote:        Using arel 6.0.3
+remote:        Using execjs 2.6.0
+remote:        Using bcrypt 3.1.10
+remote:        Installing mime-types 2.99
+remote:        Installing minitest 5.8.3
+remote:        Using thor 0.19.1
+remote:        Installing coffee-script-source 1.10.0
+remote:        Using orm_adapter 0.5.0
+remote:        Using multi_json 1.11.2
+remote:        Using mimemagic 0.3.0
+remote:        Using pg 0.18.4
+remote:        Using bundler 1.9.7
+remote:        Using rails_serve_static_assets 0.0.4
+remote:        Using rails_stdout_logging 0.0.4
+remote:        Installing concurrent-ruby 1.0.0
+remote:        Using will_paginate 3.0.7
+remote:        Installing sass 3.4.20
+remote:        Using tzinfo 1.2.2
+remote:        Using rack-test 0.6.3
+remote:        Using warden 1.2.4
+remote:        Installing tilt 2.0.2
+remote:        Using autoprefixer-rails 6.2.3
+remote:        Using uglifier 2.7.2
+remote:        Using mail 2.6.3
+remote:        Using coffee-script 2.4.1
+remote:        Using rails_12factor 0.0.3
+remote:        Installing sprockets 3.5.2
+remote:        Using will_paginate-bootstrap 1.0.1
+remote:        Using activesupport 4.2.4
+remote:        Using bootstrap-sass 3.3.6
+remote:        Using rails-deprecated_sanitizer 1.0.3
+remote:        Using globalid 0.3.6
+remote:        Using activemodel 4.2.4
+remote:        Using climate_control 0.0.3
+remote:        Installing rdoc 4.2.1
+remote:        Using activejob 4.2.4
+remote:        Using activerecord 4.2.4
+remote:        Using cocaine 0.5.8
+remote:        Using sdoc 0.4.1
+remote:        Using paperclip 4.3.2
+remote:        Installing jbuilder 2.4.0
+remote:        Installing nokogiri 1.6.7.1
+remote:        Using rails-dom-testing 1.0.7
+remote:        Using loofah 2.0.3
+remote:        Using aws-sdk-v1 1.66.0
+remote:        Using rails-html-sanitizer 1.0.2
+remote:        Using actionview 4.2.4
+remote:        Using actionpack 4.2.4
+remote:        Using aws-sdk 1.66.0
+remote:        Using actionmailer 4.2.4
+remote:        Using railties 4.2.4
+remote:        Using responders 2.1.1
+remote:        Using jquery-rails 4.0.5
+remote:        Using masonry-rails 0.2.4
+remote:        Using devise 3.5.3
+remote:        Installing sprockets-rails 3.0.0
+remote:        Using rails 4.2.4
+remote:        Using sass-rails 5.0.4
+remote:        Installing coffee-rails 4.1.1
+remote:        Using turbolinks 2.5.3
+remote:        Using jquery-turbolinks 2.1.0
+remote:        Bundle complete! 22 Gemfile dependencies, 69 gems now installed.
+remote:        Gems in the groups development and test were not installed.
+remote:        Bundled gems are installed into ./vendor/bundle.
+remote:        Post-install message from rdoc:
+remote:        Depending on your version of ruby, you may need to install ruby rdoc/ri data:
+remote:        <= 1.8.6 : unsupported
+remote:        = 1.8.7 : gem install rdoc-data; rdoc-data --install
+remote:        = 1.9.1 : gem install rdoc-data; rdoc-data --install
+remote:        >= 1.9.2 : nothing to do! Yay!
+remote:        Bundle completed (11.94s)
+remote:        Cleaning up the bundler cache.
+remote:        Removing jbuilder (2.3.2)
+remote:        Removing sass (3.4.19)
+remote:        Removing sprockets-rails (2.3.3)
+remote:        Removing minitest (5.8.2)
+remote:        Removing coffee-rails (4.1.0)
+remote:        Removing tilt (2.0.1)
+remote:        Removing nokogiri (1.6.6.2)
+remote:        Removing mime-types (2.6.2)
+remote:        Removing coffee-script-source (1.9.1.1)
+remote:        Removing sprockets (3.4.0)
+remote:        Removing mini_portile (0.6.2)
+remote: -----> Preparing app for Rails asset pipeline
+remote:        Running: rake assets:precompile
+remote:        rake aborted!
+remote:        SyntaxError: /tmp/build_8aee77f525eb209318a6b7e2588c32a8/config/environments/production.rb:81: syntax error, unexpected =>
+remote:        ...efault_url_options = { host: => 'omr-b.herokuapp.com' }
+remote:        ...                               ^
+remote:        /tmp/build_8aee77f525eb209318a6b7e2588c32a8/config/environments/production.rb:81: syntax error, unexpected '}', expecting keyword_end
+remote:        /tmp/build_8aee77f525eb209318a6b7e2588c32a8/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `require'
+remote:        /tmp/build_8aee77f525eb209318a6b7e2588c32a8/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `block in require'
+remote:        /tmp/build_8aee77f525eb209318a6b7e2588c32a8/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:240:in `load_dependency'
+remote:        /tmp/build_8aee77f525eb209318a6b7e2588c32a8/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `require'
+remote:        /tmp/build_8aee77f525eb209318a6b7e2588c32a8/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/engine.rb:598:in `block (2 levels) in <class:Engine>'
+remote:        /tmp/build_8aee77f525eb209318a6b7e2588c32a8/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/engine.rb:597:in `each'
+remote:        /tmp/build_8aee77f525eb209318a6b7e2588c32a8/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/engine.rb:597:in `block in <class:Engine>'
+remote:        /tmp/build_8aee77f525eb209318a6b7e2588c32a8/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/initializable.rb:30:in `instance_exec'
+remote:        /tmp/build_8aee77f525eb209318a6b7e2588c32a8/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/initializable.rb:30:in `run'
+remote:        /tmp/build_8aee77f525eb209318a6b7e2588c32a8/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/initializable.rb:55:in `block in run_initializers'
+remote:        /tmp/build_8aee77f525eb209318a6b7e2588c32a8/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/initializable.rb:44:in `each'
+remote:        /tmp/build_8aee77f525eb209318a6b7e2588c32a8/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/initializable.rb:44:in `tsort_each_child'
+remote:        /tmp/build_8aee77f525eb209318a6b7e2588c32a8/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/initializable.rb:54:in `run_initializers'
+remote:        /tmp/build_8aee77f525eb209318a6b7e2588c32a8/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/application.rb:352:in `initialize!'
+remote:        /tmp/build_8aee77f525eb209318a6b7e2588c32a8/config/environment.rb:5:in `<top (required)>'
+remote:        /tmp/build_8aee77f525eb209318a6b7e2588c32a8/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `require'
+remote:        /tmp/build_8aee77f525eb209318a6b7e2588c32a8/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `block in require'
+remote:        /tmp/build_8aee77f525eb209318a6b7e2588c32a8/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:240:in `load_dependency'
+remote:        /tmp/build_8aee77f525eb209318a6b7e2588c32a8/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `require'
+remote:        /tmp/build_8aee77f525eb209318a6b7e2588c32a8/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/application.rb:328:in `require_environment!'
+remote:        /tmp/build_8aee77f525eb209318a6b7e2588c32a8/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/application.rb:457:in `block in run_tasks_blocks'
+remote:        /tmp/build_8aee77f525eb209318a6b7e2588c32a8/vendor/bundle/ruby/2.2.0/gems/sprockets-rails-3.0.0/lib/sprockets/rails/task.rb:62:in `block (2 levels) in define'
+remote:        Tasks: TOP => environment
+remote:        (See full trace by running task with --trace)
+remote:  !
+remote:  !     Precompiling assets failed.
+remote:  !
+remote: 
+remote:  !     Push rejected, failed to compile Ruby app
+remote: 
+remote: Verifying deploy...
+remote: 
+remote: !	Push rejected to omr-b.
+remote: 
+To https://git.heroku.com/omr-b.git
+ ! [remote rejected] master -> master (pre-receive hook declined)
+error: failed to push some refs to 'https://git.heroku.com/omr-b.git'
+bjime488-MacBookPro-MMXV:Pinteresting bjime488$ heroku restart
+Restarting dynos... done
+bjime488-MacBookPro-MMXV:Pinteresting bjime488$ heroku open
+Opening omr-b... done
+bjime488-MacBookPro-MMXV:Pinteresting bjime488$ heroku restart
+Restarting dynos... done
+bjime488-MacBookPro-MMXV:Pinteresting bjime488$ git push heroku master
+Counting objects: 51, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (43/43), done.
+Writing objects: 100% (51/51), 281.39 KiB | 0 bytes/s, done.
+Total 51 (delta 25), reused 0 (delta 0)
+remote: Compressing source files... done.
+remote: Building source:
+remote: 
+remote: -----> Using set buildpack heroku/ruby
+remote: -----> Ruby app detected
+remote: -----> Compiling Ruby/Rails
+remote: -----> Using Ruby version: ruby-2.2.3
+remote: -----> Installing dependencies using bundler 1.9.7
+remote:        Running: bundle install --without development:test --path vendor/bundle --binstubs vendor/bundle/bin -j4 --deployment
+remote:        Fetching gem metadata from https://rubygems.org/.............
+remote:        Fetching version metadata from https://rubygems.org/...
+remote:        Fetching dependency metadata from https://rubygems.org/..
+remote:        Using i18n 0.7.0
+remote:        Using json 1.8.3
+remote:        Using rake 10.4.2
+remote:        Using thread_safe 0.3.5
+remote:        Using builder 3.2.2
+remote:        Using erubis 2.7.0
+remote:        Using rack 1.6.4
+remote:        Installing minitest 5.8.3
+remote:        Using arel 6.0.3
+remote:        Using execjs 2.6.0
+remote:        Using bcrypt 3.1.10
+remote:        Installing mini_portile2 2.0.0
+remote:        Installing mime-types 2.99
+remote:        Using thor 0.19.1
+remote:        Installing coffee-script-source 1.10.0
+remote:        Using orm_adapter 0.5.0
+remote:        Using multi_json 1.11.2
+remote:        Using mimemagic 0.3.0
+remote:        Using pg 0.18.4
+remote:        Using bundler 1.9.7
+remote:        Using rails_serve_static_assets 0.0.4
+remote:        Using rails_stdout_logging 0.0.4
+remote:        Installing sass 3.4.20
+remote:        Using will_paginate 3.0.7
+remote:        Installing concurrent-ruby 1.0.0
+remote:        Using tzinfo 1.2.2
+remote:        Using rack-test 0.6.3
+remote:        Using warden 1.2.4
+remote:        Using autoprefixer-rails 6.2.3
+remote:        Using uglifier 2.7.2
+remote:        Installing tilt 2.0.2
+remote:        Using mail 2.6.3
+remote:        Using coffee-script 2.4.1
+remote:        Using rails_12factor 0.0.3
+remote:        Using will_paginate-bootstrap 1.0.1
+remote:        Installing rdoc 4.2.1
+remote:        Using activesupport 4.2.4
+remote:        Using bootstrap-sass 3.3.6
+remote:        Using sdoc 0.4.1
+remote:        Using rails-deprecated_sanitizer 1.0.3
+remote:        Using globalid 0.3.6
+remote:        Using activemodel 4.2.4
+remote:        Using climate_control 0.0.3
+remote:        Installing sprockets 3.5.2
+remote:        Using activejob 4.2.4
+remote:        Using activerecord 4.2.4
+remote:        Using cocaine 0.5.8
+remote:        Using paperclip 4.3.2
+remote:        Installing jbuilder 2.4.0
+remote:        Installing nokogiri 1.6.7.1
+remote:        Using rails-dom-testing 1.0.7
+remote:        Using loofah 2.0.3
+remote:        Using aws-sdk-v1 1.66.0
+remote:        Using rails-html-sanitizer 1.0.2
+remote:        Using actionview 4.2.4
+remote:        Using aws-sdk 1.66.0
+remote:        Using actionpack 4.2.4
+remote:        Using actionmailer 4.2.4
+remote:        Using railties 4.2.4
+remote:        Using responders 2.1.1
+remote:        Using jquery-rails 4.0.5
+remote:        Using masonry-rails 0.2.4
+remote:        Using devise 3.5.3
+remote:        Installing coffee-rails 4.1.1
+remote:        Using turbolinks 2.5.3
+remote:        Using jquery-turbolinks 2.1.0
+remote:        Installing sprockets-rails 3.0.0
+remote:        Using rails 4.2.4
+remote:        Using sass-rails 5.0.4
+remote:        Bundle complete! 22 Gemfile dependencies, 69 gems now installed.
+remote:        Gems in the groups development and test were not installed.
+remote:        Bundled gems are installed into ./vendor/bundle.
+remote:        Post-install message from rdoc:
+remote:        Depending on your version of ruby, you may need to install ruby rdoc/ri data:
+remote:        <= 1.8.6 : unsupported
+remote:        = 1.8.7 : gem install rdoc-data; rdoc-data --install
+remote:        = 1.9.1 : gem install rdoc-data; rdoc-data --install
+remote:        >= 1.9.2 : nothing to do! Yay!
+remote:        Bundle completed (11.89s)
+remote:        Cleaning up the bundler cache.
+remote:        Removing jbuilder (2.3.2)
+remote:        Removing sass (3.4.19)
+remote:        Removing mime-types (2.6.2)
+remote:        Removing sprockets (3.4.0)
+remote:        Removing tilt (2.0.1)
+remote:        Removing nokogiri (1.6.6.2)
+remote:        Removing minitest (5.8.2)
+remote:        Removing mini_portile (0.6.2)
+remote:        Removing coffee-script-source (1.9.1.1)
+remote:        Removing coffee-rails (4.1.0)
+remote:        Removing sprockets-rails (2.3.3)
+remote: -----> Preparing app for Rails asset pipeline
+remote:        Running: rake assets:precompile
+remote:        rake aborted!
+remote:        SyntaxError: /tmp/build_0efac332cb5ef7eb8047c9a4b14424a8/config/environments/production.rb:81: syntax error, unexpected =>
+remote:        ...efault_url_options = { host: => 'omr-b.herokuapp.com' }
+remote:        ...                               ^
+remote:        /tmp/build_0efac332cb5ef7eb8047c9a4b14424a8/config/environments/production.rb:81: syntax error, unexpected '}', expecting keyword_end
+remote:        /tmp/build_0efac332cb5ef7eb8047c9a4b14424a8/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `require'
+remote:        /tmp/build_0efac332cb5ef7eb8047c9a4b14424a8/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `block in require'
+remote:        /tmp/build_0efac332cb5ef7eb8047c9a4b14424a8/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:240:in `load_dependency'
+remote:        /tmp/build_0efac332cb5ef7eb8047c9a4b14424a8/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `require'
+remote:        /tmp/build_0efac332cb5ef7eb8047c9a4b14424a8/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/engine.rb:598:in `block (2 levels) in <class:Engine>'
+remote:        /tmp/build_0efac332cb5ef7eb8047c9a4b14424a8/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/engine.rb:597:in `each'
+remote:        /tmp/build_0efac332cb5ef7eb8047c9a4b14424a8/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/engine.rb:597:in `block in <class:Engine>'
+remote:        /tmp/build_0efac332cb5ef7eb8047c9a4b14424a8/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/initializable.rb:30:in `instance_exec'
+remote:        /tmp/build_0efac332cb5ef7eb8047c9a4b14424a8/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/initializable.rb:30:in `run'
+remote:        /tmp/build_0efac332cb5ef7eb8047c9a4b14424a8/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/initializable.rb:55:in `block in run_initializers'
+remote:        /tmp/build_0efac332cb5ef7eb8047c9a4b14424a8/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/initializable.rb:44:in `each'
+remote:        /tmp/build_0efac332cb5ef7eb8047c9a4b14424a8/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/initializable.rb:44:in `tsort_each_child'
+remote:        /tmp/build_0efac332cb5ef7eb8047c9a4b14424a8/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/initializable.rb:54:in `run_initializers'
+remote:        /tmp/build_0efac332cb5ef7eb8047c9a4b14424a8/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/application.rb:352:in `initialize!'
+remote:        /tmp/build_0efac332cb5ef7eb8047c9a4b14424a8/config/environment.rb:5:in `<top (required)>'
+remote:        /tmp/build_0efac332cb5ef7eb8047c9a4b14424a8/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `require'
+remote:        /tmp/build_0efac332cb5ef7eb8047c9a4b14424a8/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `block in require'
+remote:        /tmp/build_0efac332cb5ef7eb8047c9a4b14424a8/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:240:in `load_dependency'
+remote:        /tmp/build_0efac332cb5ef7eb8047c9a4b14424a8/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `require'
+remote:        /tmp/build_0efac332cb5ef7eb8047c9a4b14424a8/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/application.rb:328:in `require_environment!'
+remote:        /tmp/build_0efac332cb5ef7eb8047c9a4b14424a8/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/application.rb:457:in `block in run_tasks_blocks'
+remote:        /tmp/build_0efac332cb5ef7eb8047c9a4b14424a8/vendor/bundle/ruby/2.2.0/gems/sprockets-rails-3.0.0/lib/sprockets/rails/task.rb:62:in `block (2 levels) in define'
+remote:        Tasks: TOP => environment
+remote:        (See full trace by running task with --trace)
+remote:  !
+remote:  !     Precompiling assets failed.
+remote:  !
+remote: 
+remote:  !     Push rejected, failed to compile Ruby app
+remote: 
+remote: Verifying deploy...
+remote: 
+remote: !	Push rejected to omr-b.
+remote: 
+To https://git.heroku.com/omr-b.git
+ ! [remote rejected] master -> master (pre-receive hook declined)
+error: failed to push some refs to 'https://git.heroku.com/omr-b.git'
+bjime488-MacBookPro-MMXV:Pinteresting bjime488$ rails g devise_install
+Could not find generator 'devise_install'. Maybe you meant 'devise:install', 'devise:erb' or 'devise'
+Run `rails generate --help` for more options.
+bjime488-MacBookPro-MMXV:Pinteresting bjime488$ rals g devise:install
+-bash: rals: command not found
+bjime488-MacBookPro-MMXV:Pinteresting bjime488$ rails g devise:install
+    conflict  config/initializers/devise.rb
+Overwrite /Users/bjime488/Dropbox/pinteresting/config/initializers/devise.rb? (enter "h" for help) [Ynaqdh] n
+        skip  config/initializers/devise.rb
+   identical  config/locales/devise.en.yml
+===============================================================================
+
+Some setup you must do manually if you haven't yet:
+
+  1. Ensure you have defined default url options in your environments files. Here
+     is an example of default_url_options appropriate for a development environment
+     in config/environments/development.rb:
+
+       config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+
+     In production, :host should be set to the actual host of your application.
+
+  2. Ensure you have defined root_url to *something* in your config/routes.rb.
+     For example:
+
+       root to: "home#index"
+
+  3. Ensure you have flash messages in app/views/layouts/application.html.erb.
+     For example:
+
+       <p class="notice"><%= notice %></p>
+       <p class="alert"><%= alert %></p>
+
+  4. If you are deploying on Heroku with Rails 3.2 only, you may want to set:
+
+       config.assets.initialize_on_precompile = false
+
+     On config/application.rb forcing your application to not access the DB
+     or load models when precompiling your assets.
+
+  5. You can copy Devise views (for customization) to your app by running:
+
+       rails g devise:views
+
+===============================================================================
+bjime488-MacBookPro-MMXV:Pinteresting bjime488$ git push heroku master
+Counting objects: 51, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (43/43), done.
+Writing objects: 100% (51/51), 281.39 KiB | 0 bytes/s, done.
+Total 51 (delta 25), reused 0 (delta 0)
+remote: Compressing source files... done.
+remote: Building source:
+remote: 
+remote: -----> Using set buildpack heroku/ruby
+remote: -----> Ruby app detected
+remote: -----> Compiling Ruby/Rails
+remote: -----> Using Ruby version: ruby-2.2.3
+remote: -----> Installing dependencies using bundler 1.9.7
+remote:        Running: bundle install --without development:test --path vendor/bundle --binstubs vendor/bundle/bin -j4 --deployment
+remote:        Fetching gem metadata from https://rubygems.org/.............
+remote:        Fetching version metadata from https://rubygems.org/...
+remote:        Fetching dependency metadata from https://rubygems.org/..
+remote:        Using i18n 0.7.0
+remote:        Using json 1.8.3
+remote:        Using rake 10.4.2
+remote:        Using thread_safe 0.3.5
+remote:        Using builder 3.2.2
+remote:        Using erubis 2.7.0
+remote:        Using rack 1.6.4
+remote:        Installing minitest 5.8.3
+remote:        Using arel 6.0.3
+remote:        Using execjs 2.6.0
+remote:        Using bcrypt 3.1.10
+remote:        Installing mime-types 2.99
+remote:        Installing mini_portile2 2.0.0
+remote:        Using thor 0.19.1
+remote:        Installing sass 3.4.20
+remote:        Using orm_adapter 0.5.0
+remote:        Using multi_json 1.11.2
+remote:        Using mimemagic 0.3.0
+remote:        Using pg 0.18.4
+remote:        Using bundler 1.9.7
+remote:        Using rails_serve_static_assets 0.0.4
+remote:        Using rails_stdout_logging 0.0.4
+remote:        Installing coffee-script-source 1.10.0
+remote:        Using will_paginate 3.0.7
+remote:        Installing concurrent-ruby 1.0.0
+remote:        Using tzinfo 1.2.2
+remote:        Using rack-test 0.6.3
+remote:        Using warden 1.2.4
+remote:        Using autoprefixer-rails 6.2.3
+remote:        Using uglifier 2.7.2
+remote:        Using mail 2.6.3
+remote:        Installing rdoc 4.2.1
+remote:        Using rails_12factor 0.0.3
+remote:        Using coffee-script 2.4.1
+remote:        Using will_paginate-bootstrap 1.0.1
+remote:        Installing tilt 2.0.2
+remote:        Using activesupport 4.2.4
+remote:        Using bootstrap-sass 3.3.6
+remote:        Using sdoc 0.4.1
+remote:        Using rails-deprecated_sanitizer 1.0.3
+remote:        Using globalid 0.3.6
+remote:        Using activemodel 4.2.4
+remote:        Using climate_control 0.0.3
+remote:        Installing sprockets 3.5.2
+remote:        Using activejob 4.2.4
+remote:        Using activerecord 4.2.4
+remote:        Using cocaine 0.5.8
+remote:        Using paperclip 4.3.2
+remote:        Installing jbuilder 2.4.0
+remote:        Installing nokogiri 1.6.7.1
+remote:        Using rails-dom-testing 1.0.7
+remote:        Using loofah 2.0.3
+remote:        Using aws-sdk-v1 1.66.0
+remote:        Using rails-html-sanitizer 1.0.2
+remote:        Using actionview 4.2.4
+remote:        Using aws-sdk 1.66.0
+remote:        Using actionpack 4.2.4
+remote:        Using actionmailer 4.2.4
+remote:        Using railties 4.2.4
+remote:        Using responders 2.1.1
+remote:        Using jquery-rails 4.0.5
+remote:        Using masonry-rails 0.2.4
+remote:        Using devise 3.5.3
+remote:        Installing sprockets-rails 3.0.0
+remote:        Using sass-rails 5.0.4
+remote:        Using rails 4.2.4
+remote:        Installing coffee-rails 4.1.1
+remote:        Using turbolinks 2.5.3
+remote:        Using jquery-turbolinks 2.1.0
+remote:        Bundle complete! 22 Gemfile dependencies, 69 gems now installed.
+remote:        Gems in the groups development and test were not installed.
+remote:        Bundled gems are installed into ./vendor/bundle.
+remote:        Post-install message from rdoc:
+remote:        Depending on your version of ruby, you may need to install ruby rdoc/ri data:
+remote:        <= 1.8.6 : unsupported
+remote:        = 1.8.7 : gem install rdoc-data; rdoc-data --install
+remote:        = 1.9.1 : gem install rdoc-data; rdoc-data --install
+remote:        >= 1.9.2 : nothing to do! Yay!
+remote:        Bundle completed (12.42s)
+remote:        Cleaning up the bundler cache.
+remote:        Removing mime-types (2.6.2)
+remote:        Removing mini_portile (0.6.2)
+remote:        Removing coffee-script-source (1.9.1.1)
+remote:        Removing sprockets (3.4.0)
+remote:        Removing coffee-rails (4.1.0)
+remote:        Removing jbuilder (2.3.2)
+remote:        Removing nokogiri (1.6.6.2)
+remote:        Removing minitest (5.8.2)
+remote:        Removing tilt (2.0.1)
+remote:        Removing sprockets-rails (2.3.3)
+remote:        Removing sass (3.4.19)
+remote: -----> Preparing app for Rails asset pipeline
+remote:        Running: rake assets:precompile
+remote:        rake aborted!
+remote:        SyntaxError: /tmp/build_2ec0ae01d08f17c703625ec8154e8211/config/environments/production.rb:81: syntax error, unexpected =>
+remote:        ...efault_url_options = { host: => 'omr-b.herokuapp.com' }
+remote:        ...                               ^
+remote:        /tmp/build_2ec0ae01d08f17c703625ec8154e8211/config/environments/production.rb:81: syntax error, unexpected '}', expecting keyword_end
+remote:        /tmp/build_2ec0ae01d08f17c703625ec8154e8211/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `require'
+remote:        /tmp/build_2ec0ae01d08f17c703625ec8154e8211/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `block in require'
+remote:        /tmp/build_2ec0ae01d08f17c703625ec8154e8211/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:240:in `load_dependency'
+remote:        /tmp/build_2ec0ae01d08f17c703625ec8154e8211/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `require'
+remote:        /tmp/build_2ec0ae01d08f17c703625ec8154e8211/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/engine.rb:598:in `block (2 levels) in <class:Engine>'
+remote:        /tmp/build_2ec0ae01d08f17c703625ec8154e8211/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/engine.rb:597:in `each'
+remote:        /tmp/build_2ec0ae01d08f17c703625ec8154e8211/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/engine.rb:597:in `block in <class:Engine>'
+remote:        /tmp/build_2ec0ae01d08f17c703625ec8154e8211/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/initializable.rb:30:in `instance_exec'
+remote:        /tmp/build_2ec0ae01d08f17c703625ec8154e8211/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/initializable.rb:30:in `run'
+remote:        /tmp/build_2ec0ae01d08f17c703625ec8154e8211/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/initializable.rb:55:in `block in run_initializers'
+remote:        /tmp/build_2ec0ae01d08f17c703625ec8154e8211/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/initializable.rb:44:in `each'
+remote:        /tmp/build_2ec0ae01d08f17c703625ec8154e8211/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/initializable.rb:44:in `tsort_each_child'
+remote:        /tmp/build_2ec0ae01d08f17c703625ec8154e8211/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/initializable.rb:54:in `run_initializers'
+remote:        /tmp/build_2ec0ae01d08f17c703625ec8154e8211/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/application.rb:352:in `initialize!'
+remote:        /tmp/build_2ec0ae01d08f17c703625ec8154e8211/config/environment.rb:5:in `<top (required)>'
+remote:        /tmp/build_2ec0ae01d08f17c703625ec8154e8211/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `require'
+remote:        /tmp/build_2ec0ae01d08f17c703625ec8154e8211/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `block in require'
+remote:        /tmp/build_2ec0ae01d08f17c703625ec8154e8211/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:240:in `load_dependency'
+remote:        /tmp/build_2ec0ae01d08f17c703625ec8154e8211/vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `require'
+remote:        /tmp/build_2ec0ae01d08f17c703625ec8154e8211/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/application.rb:328:in `require_environment!'
+remote:        /tmp/build_2ec0ae01d08f17c703625ec8154e8211/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/application.rb:457:in `block in run_tasks_blocks'
+remote:        /tmp/build_2ec0ae01d08f17c703625ec8154e8211/vendor/bundle/ruby/2.2.0/gems/sprockets-rails-3.0.0/lib/sprockets/rails/task.rb:62:in `block (2 levels) in define'
+remote:        Tasks: TOP => environment
+remote:        (See full trace by running task with --trace)
+remote:  !
+remote:  !     Precompiling assets failed.
+remote:  !
+remote: 
+remote:  !     Push rejected, failed to compile Ruby app
+remote: 
+remote: Verifying deploy....
+remote: 
+remote: !	Push rejected to omr-b.
+remote: 
+To https://git.heroku.com/omr-b.git
+ ! [remote rejected] master -> master (pre-receive hook declined)
+error: failed to push some refs to 'https://git.heroku.com/omr-b.git'
+bjime488-MacBookPro-MMXV:Pinteresting bjime488$ heroku logs --tail
+2016-01-10T22:00:12.747757+00:00 heroku[slug-compiler]: Slug compilation started
+2016-01-10T22:06:12.396978+00:00 heroku[slug-compiler]: Slug compilation started
+2016-01-10T22:06:12.396987+00:00 heroku[slug-compiler]: Slug compilation failed: failed to compile Ruby app
+2016-01-10T22:12:55.028543+00:00 heroku[slug-compiler]: Slug compilation started
+2016-01-10T22:12:55.028549+00:00 heroku[slug-compiler]: Slug compilation failed: failed to compile Ruby app
+2016-01-10T22:14:20.474618+00:00 heroku[slug-compiler]: Slug compilation started
+2016-01-10T22:14:20.474623+00:00 heroku[slug-compiler]: Slug compilation failed: failed to compile Ruby app
+2016-01-10T22:16:04.254767+00:00 heroku[slug-compiler]: Slug compilation started
+2016-01-10T22:16:04.254772+00:00 heroku[slug-compiler]: Slug compilation failed: failed to compile Ruby app
+2016-01-10T22:23:28.323623+00:00 heroku[slug-compiler]: Slug compilation started
+2016-01-10T22:23:28.323629+00:00 heroku[slug-compiler]: Slug compilation failed: failed to compile Ruby app
+2016-01-10T22:29:40.698073+00:00 heroku[slug-compiler]: Slug compilation started
+2016-01-10T22:29:40.698082+00:00 heroku[slug-compiler]: Slug compilation failed: failed to compile Ruby app
+2016-01-10T22:31:20.745199+00:00 app[web.1]: Started GET "/" for 98.116.98.148 at 2016-01-10 22:31:20 +0000
+2016-01-10T22:31:20.856378+00:00 app[web.1]: Processing by PagesController#home as HTML
+2016-01-10T22:31:20.745192+00:00 app[web.1]: => Booting WEBrick
+2016-01-10T22:31:20.954386+00:00 app[web.1]:   Rendered pages/home.html.erb within layouts/application (58.8ms)
+2016-01-10T22:31:20.745196+00:00 app[web.1]: => Rails 4.2.4 application starting in production on http://0.0.0.0:26058
+2016-01-10T22:31:20.964053+00:00 app[web.1]: Completed 200 OK in 107ms (Views: 66.1ms | ActiveRecord: 12.1ms)
+2016-01-10T22:31:20.745198+00:00 app[web.1]: => Ctrl-C to shutdown server
+2016-01-10T22:31:20.745197+00:00 app[web.1]: => Run `rails server -h` for more startup options
+2016-01-10T22:31:20.967883+00:00 heroku[router]: at=info method=GET path="/" host=omr-b.herokuapp.com request_id=57cf29c2-b210-445d-8359-7293121865d4 fwd="98.116.98.148" dyno=web.1 connect=1ms service=248ms status=200 bytes=2808
+2016-01-10T22:31:20.932864+00:00 app[web.1]:   User Load (1.6ms)  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+2016-01-10T22:31:20.963554+00:00 app[web.1]:   Rendered layouts/_header.html.erb (2.0ms)
+2016-01-10T22:31:37.986388+00:00 heroku[web.1]: Idling
+2016-01-10T22:31:37.987195+00:00 heroku[web.1]: State changed from up to down
+2016-01-10T22:31:43.525279+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2016-01-10T22:31:45.144376+00:00 app[web.1]: [2016-01-10 22:31:45] FATAL SignalException: SIGTERM
+2016-01-10T22:31:45.144380+00:00 app[web.1]: 	/app/vendor/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:174:in `select'
+2016-01-10T22:31:45.144382+00:00 app[web.1]: 	/app/vendor/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:174:in `block in start'
+2016-01-10T22:31:45.144383+00:00 app[web.1]: 	/app/vendor/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:32:in `start'
+2016-01-10T22:31:45.144383+00:00 app[web.1]: 	/app/vendor/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:162:in `start'
+2016-01-10T22:31:45.144384+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/handler/webrick.rb:34:in `run'
+2016-01-10T22:31:45.144385+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/server.rb:286:in `start'
+2016-01-10T22:31:45.144386+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/commands/server.rb:80:in `start'
+2016-01-10T22:31:45.144387+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/commands/commands_tasks.rb:80:in `block in server'
+2016-01-10T22:31:45.144388+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/commands/commands_tasks.rb:75:in `tap'
+2016-01-10T22:31:45.144389+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/commands/commands_tasks.rb:75:in `server'
+2016-01-10T22:31:45.144390+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+2016-01-10T22:31:45.144391+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/commands.rb:17:in `<top (required)>'
+2016-01-10T22:31:45.144392+00:00 app[web.1]: 	bin/rails:8:in `require'
+2016-01-10T22:31:45.144392+00:00 app[web.1]: 	bin/rails:8:in `<main>'
+2016-01-10T22:31:45.144482+00:00 app[web.1]: [2016-01-10 22:31:45] INFO  going to shutdown ...
+2016-01-10T22:31:45.144522+00:00 app[web.1]: [2016-01-10 22:31:45] INFO  WEBrick::HTTPServer#start done.
+2016-01-10T22:31:45.144546+00:00 app[web.1]: Exiting
+2016-01-10T22:31:46.131933+00:00 heroku[web.1]: Process exited with status 143
+2016-01-10T22:32:13.437403+00:00 heroku[slug-compiler]: Slug compilation started
+2016-01-10T22:32:13.437413+00:00 heroku[slug-compiler]: Slug compilation failed: failed to compile Ruby app
+2016-01-10T22:34:04.956447+00:00 heroku[slug-compiler]: Slug compilation started
+2016-01-10T22:34:04.956457+00:00 heroku[slug-compiler]: Slug compilation failed: failed to compile Ruby app
+2016-01-10T22:36:57.651216+00:00 heroku[slug-compiler]: Slug compilation started
+2016-01-10T22:36:57.651222+00:00 heroku[slug-compiler]: Slug compilation failed: failed to compile Ruby app
+2016-01-10T22:40:00.539651+00:00 heroku[slug-compiler]: Slug compilation started
+2016-01-10T22:40:00.539656+00:00 heroku[slug-compiler]: Slug compilation failed: failed to compile Ruby app
+2016-01-10T22:45:49.040532+00:00 heroku[web.1]: State changed from down to starting
+2016-01-10T22:45:52.224910+00:00 heroku[web.1]: Starting process with command `bin/rails server -p 44848 -e production`
+2016-01-10T22:45:58.158013+00:00 app[web.1]: [2016-01-10 22:45:58] INFO  WEBrick 1.3.1
+2016-01-10T22:45:58.158042+00:00 app[web.1]: [2016-01-10 22:45:58] INFO  ruby 2.2.3 (2015-08-18) [x86_64-linux]
+2016-01-10T22:45:58.158409+00:00 app[web.1]: [2016-01-10 22:45:58] INFO  WEBrick::HTTPServer#start: pid=3 port=44848
+2016-01-10T22:45:58.411778+00:00 heroku[web.1]: State changed from starting to up
+2016-01-10T22:46:00.207440+00:00 heroku[router]: at=info method=GET path="/" host=omr-b.herokuapp.com request_id=79dc6186-a48f-4c63-8c45-90a1b301e346 fwd="98.116.98.148" dyno=web.1 connect=2ms service=162ms status=200 bytes=2808
+2016-01-10T22:46:00.063236+00:00 app[web.1]: => Booting WEBrick
+2016-01-10T22:46:00.063240+00:00 app[web.1]: => Rails 4.2.4 application starting in production on http://0.0.0.0:44848
+2016-01-10T22:46:00.063241+00:00 app[web.1]: => Run `rails server -h` for more startup options
+2016-01-10T22:46:00.063242+00:00 app[web.1]: => Ctrl-C to shutdown server
+2016-01-10T22:46:00.063243+00:00 app[web.1]: Started GET "/" for 98.116.98.148 at 2016-01-10 22:46:00 +0000
+2016-01-10T22:46:00.142034+00:00 app[web.1]: Processing by PagesController#home as HTML
+2016-01-10T22:46:00.204551+00:00 app[web.1]:   Rendered pages/home.html.erb within layouts/application (47.5ms)
+2016-01-10T22:46:00.209339+00:00 app[web.1]: Completed 200 OK in 67ms (Views: 39.3ms | ActiveRecord: 15.6ms)
+2016-01-10T22:46:00.185040+00:00 app[web.1]:   User Load (2.7ms)  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+2016-01-10T22:46:00.208753+00:00 app[web.1]:   Rendered layouts/_header.html.erb (1.4ms)
+2016-01-10T22:46:58.287270+00:00 heroku[web.1]: State changed from up to starting
+2016-01-10T22:47:00.030307+00:00 heroku[web.1]: Starting process with command `bin/rails server -p 52635 -e production`
+2016-01-10T22:47:02.891177+00:00 app[web.1]: [2016-01-10 22:47:02] INFO  WEBrick 1.3.1
+2016-01-10T22:47:02.891205+00:00 app[web.1]: [2016-01-10 22:47:02] INFO  ruby 2.2.3 (2015-08-18) [x86_64-linux]
+2016-01-10T22:47:02.891436+00:00 app[web.1]: [2016-01-10 22:47:02] INFO  WEBrick::HTTPServer#start: pid=3 port=52635
+2016-01-10T22:47:03.206161+00:00 heroku[web.1]: State changed from starting to up
+2016-01-10T22:47:03.724372+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2016-01-10T22:47:05.267142+00:00 app[web.1]: [2016-01-10 22:47:05] FATAL SignalException: SIGTERM
+2016-01-10T22:47:05.267148+00:00 app[web.1]: 	/app/vendor/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:174:in `select'
+2016-01-10T22:47:05.267150+00:00 app[web.1]: 	/app/vendor/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:174:in `block in start'
+2016-01-10T22:47:05.267151+00:00 app[web.1]: 	/app/vendor/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:32:in `start'
+2016-01-10T22:47:05.267152+00:00 app[web.1]: 	/app/vendor/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:162:in `start'
+2016-01-10T22:47:05.267152+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/handler/webrick.rb:34:in `run'
+2016-01-10T22:47:05.267153+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/server.rb:286:in `start'
+2016-01-10T22:47:05.267154+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/commands/server.rb:80:in `start'
+2016-01-10T22:47:05.267155+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/commands/commands_tasks.rb:80:in `block in server'
+2016-01-10T22:47:05.267162+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/commands/commands_tasks.rb:75:in `tap'
+2016-01-10T22:47:05.267163+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/commands/commands_tasks.rb:75:in `server'
+2016-01-10T22:47:05.267163+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+2016-01-10T22:47:05.267164+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/commands.rb:17:in `<top (required)>'
+2016-01-10T22:47:05.267165+00:00 app[web.1]: 	bin/rails:8:in `require'
+2016-01-10T22:47:05.267166+00:00 app[web.1]: 	bin/rails:8:in `<main>'
+2016-01-10T22:47:05.268211+00:00 app[web.1]: [2016-01-10 22:47:05] INFO  going to shutdown ...
+2016-01-10T22:47:05.268302+00:00 app[web.1]: [2016-01-10 22:47:05] INFO  WEBrick::HTTPServer#start done.
+2016-01-10T22:47:05.268348+00:00 app[web.1]: Exiting
+2016-01-10T22:47:06.228902+00:00 heroku[web.1]: Process exited with status 143
+2016-01-10T22:47:30.234561+00:00 heroku[slug-compiler]: Slug compilation started
+2016-01-10T22:47:30.234580+00:00 heroku[slug-compiler]: Slug compilation failed: failed to compile Ruby app
+2016-01-10T22:50:46.639875+00:00 heroku[slug-compiler]: Slug compilation started
+2016-01-10T22:50:46.639881+00:00 heroku[slug-compiler]: Slug compilation failed: failed to compile Ruby app
+^C
+ !    Command cancelled.
+bjime488-MacBookPro-MMXV:Pinteresting bjime488$ git add .
+bjime488-MacBookPro-MMXV:Pinteresting bjime488$ git commit -am "hope it works this time"
+[master 3b5ce15] hope it works this time
+ 2 files changed, 5 insertions(+), 2 deletions(-)
+bjime488-MacBookPro-MMXV:Pinteresting bjime488$ git push
+Counting objects: 6, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 618 bytes | 0 bytes/s, done.
+Total 6 (delta 4), reused 0 (delta 0)
+To git@github.com:Zealex/pinteresting.git
+   babef64..3b5ce15  master -> master
+bjime488-MacBookPro-MMXV:Pinteresting bjime488$ git push heroku master
+Counting objects: 57, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (49/49), done.
+Writing objects: 100% (57/57), 281.93 KiB | 0 bytes/s, done.
+Total 57 (delta 29), reused 0 (delta 0)
+remote: Compressing source files... done.
+remote: Building source:
+remote: 
+remote: -----> Using set buildpack heroku/ruby
+remote: -----> Ruby app detected
+remote: -----> Compiling Ruby/Rails
+remote: -----> Using Ruby version: ruby-2.2.3
+remote: -----> Installing dependencies using bundler 1.9.7
+remote:        Running: bundle install --without development:test --path vendor/bundle --binstubs vendor/bundle/bin -j4 --deployment
+remote:        You are trying to install in deployment mode after changing
+remote:        your Gemfile. Run `bundle install` elsewhere and add the
+remote:        updated Gemfile.lock to version control.
+remote:        You have added to the Gemfile:
+remote:        * sdoc
+remote:        You have deleted from the Gemfile:
+remote:        * sdoc (~> 0.4.0)
+remote:        Bundler Output: You are trying to install in deployment mode after changing
+remote:        your Gemfile. Run `bundle install` elsewhere and add the
+remote:        updated Gemfile.lock to version control.
+remote:        
+remote:        You have added to the Gemfile:
+remote:        * sdoc
+remote:        
+remote:        You have deleted from the Gemfile:
+remote:        * sdoc (~> 0.4.0)
+remote:  !
+remote:  !     Failed to install gems via Bundler.
+remote:  !
+remote: 
+remote:  !     Push rejected, failed to compile Ruby app
+remote: 
+remote: Verifying deploy...
+remote: 
+remote: !	Push rejected to omr-b.
+remote: 
+To https://git.heroku.com/omr-b.git
+ ! [remote rejected] master -> master (pre-receive hook declined)
+error: failed to push some refs to 'https://git.heroku.com/omr-b.git'
+bjime488-MacBookPro-MMXV:Pinteresting bjime488$ bundle install
+Resolving dependencies...
+Using rake 10.4.2
+Using i18n 0.7.0
+Using json 1.8.3
+Using minitest 5.8.3
+Using thread_safe 0.3.5
+Using tzinfo 1.2.2
+Using activesupport 4.2.4
+Using builder 3.2.2
+Using erubis 2.7.0
+Using mini_portile2 2.0.0
+Using nokogiri 1.6.7.1
+Using rails-deprecated_sanitizer 1.0.3
+Using rails-dom-testing 1.0.7
+Using loofah 2.0.3
+Using rails-html-sanitizer 1.0.2
+Using actionview 4.2.4
+Using rack 1.6.4
+Using rack-test 0.6.3
+Using actionpack 4.2.4
+Using globalid 0.3.6
+Using activejob 4.2.4
+Using mime-types 2.99
+Using mail 2.6.3
+Using actionmailer 4.2.4
+Using activemodel 4.2.4
+Using arel 6.0.3
+Using activerecord 4.2.4
+Using execjs 2.6.0
+Using autoprefixer-rails 6.2.3
+Using aws-sdk-v1 1.66.0
+Using aws-sdk 1.66.0
+Using bcrypt 3.1.10
+Using debug_inspector 0.0.2
+Using binding_of_caller 0.7.2
+Using sass 3.4.20
+Using bootstrap-sass 3.3.6
+Using bundler 1.10.6
+Using byebug 8.2.1
+Using climate_control 0.0.3
+Using cocaine 0.5.8
+Using coffee-script-source 1.10.0
+Using coffee-script 2.4.1
+Using thor 0.19.1
+Using railties 4.2.4
+Using coffee-rails 4.1.1
+Using concurrent-ruby 1.0.0
+Using orm_adapter 0.5.0
+Using responders 2.1.1
+Using warden 1.2.4
+Using devise 3.5.3
+Using multi_json 1.11.2
+Using jbuilder 2.4.0
+Using jquery-rails 4.0.5
+Using turbolinks 2.5.3
+Using jquery-turbolinks 2.1.0
+Using masonry-rails 0.2.4
+Using mimemagic 0.3.0
+Using paperclip 4.3.2
+Using sprockets 3.5.2
+Using sprockets-rails 3.0.0
+Using rails 4.2.4
+Using rdoc 4.2.1
+Using tilt 2.0.2
+Using sass-rails 5.0.4
+Using sdoc 0.4.1
+Using spring 1.6.2
+Using sqlite3 1.3.11
+Using uglifier 2.7.2
+Using web-console 2.2.1
+Using will_paginate 3.0.7
+Using will_paginate-bootstrap 1.0.1
+Bundle complete! 22 Gemfile dependencies, 71 gems now installed.
+Gems in the groups production and productio were not installed.
+Use `bundle show [gemname]` to see where a bundled gem is installed.
+bjime488-MacBookPro-MMXV:Pinteresting bjime488$ git push heroku master
+Counting objects: 57, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (49/49), done.
+Writing objects: 100% (57/57), 281.93 KiB | 0 bytes/s, done.
+Total 57 (delta 29), reused 0 (delta 0)
+remote: Compressing source files... done.
+remote: Building source:
+remote: 
+remote: -----> Using set buildpack heroku/ruby
+remote: -----> Ruby app detected
+remote: -----> Compiling Ruby/Rails
+remote: -----> Using Ruby version: ruby-2.2.3
+remote: -----> Installing dependencies using bundler 1.9.7
+remote:        Running: bundle install --without development:test --path vendor/bundle --binstubs vendor/bundle/bin -j4 --deployment
+remote:        You are trying to install in deployment mode after changing
+remote:        your Gemfile. Run `bundle install` elsewhere and add the
+remote:        updated Gemfile.lock to version control.
+remote:        You have added to the Gemfile:
+remote:        * sdoc
+remote:        You have deleted from the Gemfile:
+remote:        * sdoc (~> 0.4.0)
+remote:        Bundler Output: You are trying to install in deployment mode after changing
+remote:        your Gemfile. Run `bundle install` elsewhere and add the
+remote:        updated Gemfile.lock to version control.
+remote:        
+remote:        You have added to the Gemfile:
+remote:        * sdoc
+remote:        
+remote:        You have deleted from the Gemfile:
+remote:        * sdoc (~> 0.4.0)
+remote:  !
+remote:  !     Failed to install gems via Bundler.
+remote:  !
+remote: 
+remote:  !     Push rejected, failed to compile Ruby app
+remote: 
+remote: Verifying deploy...
+remote: 
+remote: !	Push rejected to omr-b.
+remote: 
+To https://git.heroku.com/omr-b.git
+ ! [remote rejected] master -> master (pre-receive hook declined)
+error: failed to push some refs to 'https://git.heroku.com/omr-b.git'
+bjime488-MacBookPro-MMXV:Pinteresting bjime488$ bundle install
+Fetching gem metadata from https://rubygems.org/.............
+Fetching version metadata from https://rubygems.org/...
+Fetching dependency metadata from https://rubygems.org/..
+Resolving dependencies.................
+Using rake 10.4.2
+Using i18n 0.7.0
+Using json 1.8.3
+Using minitest 5.8.3
+Using thread_safe 0.3.5
+Using tzinfo 1.2.2
+Using activesupport 4.2.4
+Using builder 3.2.2
+Using erubis 2.7.0
+Using mini_portile2 2.0.0
+Using nokogiri 1.6.7.1
+Using rails-deprecated_sanitizer 1.0.3
+Using rails-dom-testing 1.0.7
+Using loofah 2.0.3
+Using rails-html-sanitizer 1.0.2
+Using actionview 4.2.4
+Using rack 1.6.4
+Using rack-test 0.6.3
+Using actionpack 4.2.4
+Using globalid 0.3.6
+Using activejob 4.2.4
+Using mime-types 2.99
+Using mail 2.6.3
+Using actionmailer 4.2.4
+Using activemodel 4.2.4
+Using arel 6.0.3
+Using activerecord 4.2.4
+Using execjs 2.6.0
+Using autoprefixer-rails 6.2.3
+Using aws-sdk-v1 1.66.0
+Using aws-sdk 1.66.0
+Using bcrypt 3.1.10
+Using debug_inspector 0.0.2
+Using binding_of_caller 0.7.2
+Using sass 3.4.20
+Using bootstrap-sass 3.3.6
+Using bundler 1.10.6
+Using byebug 8.2.1
+Using climate_control 0.0.3
+Using cocaine 0.5.8
+Using coffee-script-source 1.10.0
+Using coffee-script 2.4.1
+Using thor 0.19.1
+Using railties 4.2.4
+Using coffee-rails 4.1.1
+Using concurrent-ruby 1.0.0
+Using orm_adapter 0.5.0
+Using responders 2.1.1
+Using warden 1.2.4
+Using devise 3.5.3
+Using multi_json 1.11.2
+Using jbuilder 2.4.0
+Using jquery-rails 4.0.5
+Using turbolinks 2.5.3
+Using jquery-turbolinks 2.1.0
+Using masonry-rails 0.2.4
+Using mimemagic 0.3.0
+Using paperclip 4.3.2
+Using sprockets 3.5.2
+Using sprockets-rails 3.0.0
+Using rails 4.2.4
+Using rdoc 4.2.1
+Using tilt 2.0.2
+Using sass-rails 5.0.4
+Using sdoc 0.4.1
+Using spring 1.6.2
+Using sqlite3 1.3.11
+Using uglifier 2.7.2
+Using web-console 2.2.1
+Using will_paginate 3.0.7
+Using will_paginate-bootstrap 1.0.1
+Bundle complete! 22 Gemfile dependencies, 71 gems now installed.
+Gems in the groups production and productio were not installed.
+Use `bundle show [gemname]` to see where a bundled gem is installed.
+bjime488-MacBookPro-MMXV:Pinteresting bjime488$ git push heroku master
+Counting objects: 57, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (49/49), done.
+Writing objects: 100% (57/57), 281.93 KiB | 0 bytes/s, done.
+Total 57 (delta 29), reused 0 (delta 0)
+remote: Compressing source files... done.
+remote: Building source:
+remote: 
+remote: -----> Using set buildpack heroku/ruby
+remote: -----> Ruby app detected
+remote: -----> Compiling Ruby/Rails
+remote: -----> Using Ruby version: ruby-2.2.3
+remote: -----> Installing dependencies using bundler 1.9.7
+remote:        Running: bundle install --without development:test --path vendor/bundle --binstubs vendor/bundle/bin -j4 --deployment
+remote:        You are trying to install in deployment mode after changing
+remote:        your Gemfile. Run `bundle install` elsewhere and add the
+remote:        updated Gemfile.lock to version control.
+remote:        You have added to the Gemfile:
+remote:        * sdoc
+remote:        You have deleted from the Gemfile:
+remote:        * sdoc (~> 0.4.0)
+remote:        Bundler Output: You are trying to install in deployment mode after changing
+remote:        your Gemfile. Run `bundle install` elsewhere and add the
+remote:        updated Gemfile.lock to version control.
+remote:        
+remote:        You have added to the Gemfile:
+remote:        * sdoc
+remote:        
+remote:        You have deleted from the Gemfile:
+remote:        * sdoc (~> 0.4.0)
+remote:  !
+remote:  !     Failed to install gems via Bundler.
+remote:  !
+remote: 
+remote:  !     Push rejected, failed to compile Ruby app
+remote: 
+remote: Verifying deploy...
+remote: 
+remote: !	Push rejected to omr-b.
+remote: 
+To https://git.heroku.com/omr-b.git
+ ! [remote rejected] master -> master (pre-receive hook declined)
+error: failed to push some refs to 'https://git.heroku.com/omr-b.git'
+bjime488-MacBookPro-MMXV:Pinteresting bjime488$ bundle install --no-deployment
+Using rake 10.4.2
+Using i18n 0.7.0
+Using json 1.8.3
+Using minitest 5.8.3
+Using thread_safe 0.3.5
+Using tzinfo 1.2.2
+Using activesupport 4.2.4
+Using builder 3.2.2
+Using erubis 2.7.0
+Using mini_portile2 2.0.0
+Using nokogiri 1.6.7.1
+Using rails-deprecated_sanitizer 1.0.3
+Using rails-dom-testing 1.0.7
+Using loofah 2.0.3
+Using rails-html-sanitizer 1.0.2
+Using actionview 4.2.4
+Using rack 1.6.4
+Using rack-test 0.6.3
+Using actionpack 4.2.4
+Using globalid 0.3.6
+Using activejob 4.2.4
+Using mime-types 2.99
+Using mail 2.6.3
+Using actionmailer 4.2.4
+Using activemodel 4.2.4
+Using arel 6.0.3
+Using activerecord 4.2.4
+Using execjs 2.6.0
+Using autoprefixer-rails 6.2.3
+Using aws-sdk-v1 1.66.0
+Using aws-sdk 1.66.0
+Using bcrypt 3.1.10
+Using debug_inspector 0.0.2
+Using binding_of_caller 0.7.2
+Using sass 3.4.20
+Using bootstrap-sass 3.3.6
+Using byebug 8.2.1
+Using climate_control 0.0.3
+Using cocaine 0.5.8
+Using coffee-script-source 1.10.0
+Using coffee-script 2.4.1
+Using thor 0.19.1
+Using railties 4.2.4
+Using coffee-rails 4.1.1
+Using concurrent-ruby 1.0.0
+Using orm_adapter 0.5.0
+Using responders 2.1.1
+Using warden 1.2.4
+Using devise 3.5.3
+Using multi_json 1.11.2
+Using jbuilder 2.4.0
+Using jquery-rails 4.0.5
+Using turbolinks 2.5.3
+Using jquery-turbolinks 2.1.0
+Using masonry-rails 0.2.4
+Using mimemagic 0.3.0
+Using paperclip 4.3.2
+Using bundler 1.10.6
+Using sprockets 3.5.2
+Using sprockets-rails 3.0.0
+Using rails 4.2.4
+Using rdoc 4.2.1
+Using tilt 2.0.2
+Using sass-rails 5.0.4
+Using sdoc 0.4.1
+Using spring 1.6.2
+Using sqlite3 1.3.11
+Using uglifier 2.7.2
+Using web-console 2.2.1
+Using will_paginate 3.0.7
+Using will_paginate-bootstrap 1.0.1
+Bundle complete! 22 Gemfile dependencies, 71 gems now installed.
+Gems in the groups production and productio were not installed.
+Use `bundle show [gemname]` to see where a bundled gem is installed.
+bjime488-MacBookPro-MMXV:Pinteresting bjime488$ git push heroku master
+Counting objects: 57, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (49/49), done.
+Writing objects: 100% (57/57), 281.93 KiB | 0 bytes/s, done.
+Total 57 (delta 29), reused 0 (delta 0)
+remote: Compressing source files... done.
+remote: Building source:
+remote: 
+remote: -----> Using set buildpack heroku/ruby
+remote: -----> Ruby app detected
+remote: -----> Compiling Ruby/Rails
+remote: -----> Using Ruby version: ruby-2.2.3
+remote: -----> Installing dependencies using bundler 1.9.7
+remote:        Running: bundle install --without development:test --path vendor/bundle --binstubs vendor/bundle/bin -j4 --deployment
+remote:        You are trying to install in deployment mode after changing
+remote:        your Gemfile. Run `bundle install` elsewhere and add the
+remote:        updated Gemfile.lock to version control.
+remote:        You have added to the Gemfile:
+remote:        * sdoc
+remote:        You have deleted from the Gemfile:
+remote:        * sdoc (~> 0.4.0)
+remote:        Bundler Output: You are trying to install in deployment mode after changing
+remote:        your Gemfile. Run `bundle install` elsewhere and add the
+remote:        updated Gemfile.lock to version control.
+remote:        
+remote:        You have added to the Gemfile:
+remote:        * sdoc
+remote:        
+remote:        You have deleted from the Gemfile:
+remote:        * sdoc (~> 0.4.0)
+remote:  !
+remote:  !     Failed to install gems via Bundler.
+remote:  !
+remote: 
+remote:  !     Push rejected, failed to compile Ruby app
+remote: 
+remote: Verifying deploy...
+remote: 
+remote: !	Push rejected to omr-b.
+remote: 
+To https://git.heroku.com/omr-b.git
+ ! [remote rejected] master -> master (pre-receive hook declined)
+error: failed to push some refs to 'https://git.heroku.com/omr-b.git'
+bjime488-MacBookPro-MMXV:Pinteresting bjime488$ bundle install
+Resolving dependencies...
+Using rake 10.4.2
+Using i18n 0.7.0
+Using json 1.8.3
+Using minitest 5.8.3
+Using thread_safe 0.3.5
+Using tzinfo 1.2.2
+Using activesupport 4.2.4
+Using builder 3.2.2
+Using erubis 2.7.0
+Using mini_portile2 2.0.0
+Using nokogiri 1.6.7.1
+Using rails-deprecated_sanitizer 1.0.3
+Using rails-dom-testing 1.0.7
+Using loofah 2.0.3
+Using rails-html-sanitizer 1.0.2
+Using actionview 4.2.4
+Using rack 1.6.4
+Using rack-test 0.6.3
+Using actionpack 4.2.4
+Using globalid 0.3.6
+Using activejob 4.2.4
+Using mime-types 2.99
+Using mail 2.6.3
+Using actionmailer 4.2.4
+Using activemodel 4.2.4
+Using arel 6.0.3
+Using activerecord 4.2.4
+Using execjs 2.6.0
+Using autoprefixer-rails 6.2.3
+Using aws-sdk-v1 1.66.0
+Using aws-sdk 1.66.0
+Using bcrypt 3.1.10
+Using debug_inspector 0.0.2
+Using binding_of_caller 0.7.2
+Using sass 3.4.20
+Using bootstrap-sass 3.3.6
+Using bundler 1.10.6
+Using byebug 8.2.1
+Using climate_control 0.0.3
+Using cocaine 0.5.8
+Using coffee-script-source 1.10.0
+Using coffee-script 2.4.1
+Using thor 0.19.1
+Using railties 4.2.4
+Using coffee-rails 4.1.1
+Using concurrent-ruby 1.0.0
+Using orm_adapter 0.5.0
+Using responders 2.1.1
+Using warden 1.2.4
+Using devise 3.5.3
+Using multi_json 1.11.2
+Using jbuilder 2.4.0
+Using jquery-rails 4.0.5
+Using turbolinks 2.5.3
+Using jquery-turbolinks 2.1.0
+Using masonry-rails 0.2.4
+Using mimemagic 0.3.0
+Using paperclip 4.3.2
+Using sprockets 3.5.2
+Using sprockets-rails 3.0.0
+Using rails 4.2.4
+Using rdoc 4.2.1
+Using tilt 2.0.2
+Using sass-rails 5.0.4
+Using sdoc 0.4.1
+Using spring 1.6.2
+Using sqlite3 1.3.11
+Using uglifier 2.7.2
+Using web-console 2.2.1
+Using will_paginate 3.0.7
+Using will_paginate-bootstrap 1.0.1
+Bundle complete! 22 Gemfile dependencies, 71 gems now installed.
+Gems in the groups production and productio were not installed.
+Use `bundle show [gemname]` to see where a bundled gem is installed.
+bjime488-MacBookPro-MMXV:Pinteresting bjime488$ git push heroku master
+Counting objects: 57, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (49/49), done.
+Writing objects: 100% (57/57), 281.93 KiB | 0 bytes/s, done.
+Total 57 (delta 29), reused 0 (delta 0)
+remote: Compressing source files... done.
+remote: Building source:
+remote: 
+remote: -----> Using set buildpack heroku/ruby
+remote: -----> Ruby app detected
+remote: -----> Compiling Ruby/Rails
+remote: -----> Using Ruby version: ruby-2.2.3
+remote: -----> Installing dependencies using bundler 1.9.7
+remote:        Running: bundle install --without development:test --path vendor/bundle --binstubs vendor/bundle/bin -j4 --deployment
+remote:        You are trying to install in deployment mode after changing
+remote:        your Gemfile. Run `bundle install` elsewhere and add the
+remote:        updated Gemfile.lock to version control.
+remote:        You have added to the Gemfile:
+remote:        * sdoc
+remote:        You have deleted from the Gemfile:
+remote:        * sdoc (~> 0.4.0)
+remote:        Bundler Output: You are trying to install in deployment mode after changing
+remote:        your Gemfile. Run `bundle install` elsewhere and add the
+remote:        updated Gemfile.lock to version control.
+remote:        
+remote:        You have added to the Gemfile:
+remote:        * sdoc
+remote:        
+remote:        You have deleted from the Gemfile:
+remote:        * sdoc (~> 0.4.0)
+remote:  !
+remote:  !     Failed to install gems via Bundler.
+remote:  !
+remote: 
+remote:  !     Push rejected, failed to compile Ruby app
+remote: 
+remote: Verifying deploy....
+remote: 
+remote: !	Push rejected to omr-b.
+remote: 
+To https://git.heroku.com/omr-b.git
+ ! [remote rejected] master -> master (pre-receive hook declined)
+error: failed to push some refs to 'https://git.heroku.com/omr-b.git'
+bjime488-MacBookPro-MMXV:Pinteresting bjime488$ bundle install
+Using rake 10.4.2
+Using i18n 0.7.0
+Using json 1.8.3
+Using minitest 5.8.3
+Using thread_safe 0.3.5
+Using tzinfo 1.2.2
+Using activesupport 4.2.4
+Using builder 3.2.2
+Using erubis 2.7.0
+Using mini_portile2 2.0.0
+Using nokogiri 1.6.7.1
+Using rails-deprecated_sanitizer 1.0.3
+Using rails-dom-testing 1.0.7
+Using loofah 2.0.3
+Using rails-html-sanitizer 1.0.2
+Using actionview 4.2.4
+Using rack 1.6.4
+Using rack-test 0.6.3
+Using actionpack 4.2.4
+Using globalid 0.3.6
+Using activejob 4.2.4
+Using mime-types 2.99
+Using mail 2.6.3
+Using actionmailer 4.2.4
+Using activemodel 4.2.4
+Using arel 6.0.3
+Using activerecord 4.2.4
+Using execjs 2.6.0
+Using autoprefixer-rails 6.2.3
+Using aws-sdk-v1 1.66.0
+Using aws-sdk 1.66.0
+Using bcrypt 3.1.10
+Using debug_inspector 0.0.2
+Using binding_of_caller 0.7.2
+Using sass 3.4.20
+Using bootstrap-sass 3.3.6
+Using byebug 8.2.1
+Using climate_control 0.0.3
+Using cocaine 0.5.8
+Using coffee-script-source 1.10.0
+Using coffee-script 2.4.1
+Using thor 0.19.1
+Using railties 4.2.4
+Using coffee-rails 4.1.1
+Using concurrent-ruby 1.0.0
+Using orm_adapter 0.5.0
+Using responders 2.1.1
+Using warden 1.2.4
+Using devise 3.5.3
+Using multi_json 1.11.2
+Using jbuilder 2.4.0
+Using jquery-rails 4.0.5
+Using turbolinks 2.5.3
+Using jquery-turbolinks 2.1.0
+Using masonry-rails 0.2.4
+Using mimemagic 0.3.0
+Using paperclip 4.3.2
+Using bundler 1.10.6
+Using sprockets 3.5.2
+Using sprockets-rails 3.0.0
+Using rails 4.2.4
+Using rdoc 4.2.1
+Using tilt 2.0.2
+Using sass-rails 5.0.4
+Using sdoc 0.4.1
+Using spring 1.6.2
+Using sqlite3 1.3.11
+Using uglifier 2.7.2
+Using web-console 2.2.1
+Using will_paginate 3.0.7
+Using will_paginate-bootstrap 1.0.1
+Bundle complete! 22 Gemfile dependencies, 71 gems now installed.
+Gems in the groups production and productio were not installed.
+Use `bundle show [gemname]` to see where a bundled gem is installed.
+bjime488-MacBookPro-MMXV:Pinteresting bjime488$ rake db:migrate
+bjime488-MacBookPro-MMXV:Pinteresting bjime488$ bundle install
+Fetching gem metadata from https://rubygems.org/.............
+Fetching version metadata from https://rubygems.org/...
+Fetching dependency metadata from https://rubygems.org/..
+Resolving dependencies................................
+Using rake 10.4.2
+Using i18n 0.7.0
+Using json 1.8.3
+Using minitest 5.8.3
+Using thread_safe 0.3.5
+Using tzinfo 1.2.2
+Using activesupport 4.2.4
+Using builder 3.2.2
+Using erubis 2.7.0
+Using mini_portile2 2.0.0
+Using nokogiri 1.6.7.1
+Using rails-deprecated_sanitizer 1.0.3
+Using rails-dom-testing 1.0.7
+Using loofah 2.0.3
+Using rails-html-sanitizer 1.0.2
+Using actionview 4.2.4
+Using rack 1.6.4
+Using rack-test 0.6.3
+Using actionpack 4.2.4
+Using globalid 0.3.6
+Using activejob 4.2.4
+Using mime-types 2.99
+Using mail 2.6.3
+Using actionmailer 4.2.4
+Using activemodel 4.2.4
+Using arel 6.0.3
+Using activerecord 4.2.4
+Using execjs 2.6.0
+Using autoprefixer-rails 6.2.3
+Using aws-sdk-v1 1.66.0
+Using aws-sdk 1.66.0
+Using bcrypt 3.1.10
+Using debug_inspector 0.0.2
+Using binding_of_caller 0.7.2
+Using sass 3.4.20
+Using bootstrap-sass 3.3.6
+Using bundler 1.10.6
+Using byebug 8.2.1
+Using climate_control 0.0.3
+Using cocaine 0.5.8
+Using coffee-script-source 1.10.0
+Using coffee-script 2.4.1
+Using thor 0.19.1
+Using railties 4.2.4
+Using coffee-rails 4.1.1
+Using concurrent-ruby 1.0.0
+Using orm_adapter 0.5.0
+Using responders 2.1.1
+Using warden 1.2.4
+Using devise 3.5.3
+Using multi_json 1.11.2
+Using jbuilder 2.4.0
+Using jquery-rails 4.0.5
+Using turbolinks 2.5.3
+Using jquery-turbolinks 2.1.0
+Using masonry-rails 0.2.4
+Using mimemagic 0.3.0
+Using paperclip 4.3.2
+Using sprockets 3.5.2
+Using sprockets-rails 3.0.0
+Using rails 4.2.4
+Using rdoc 4.2.1
+Using tilt 2.0.2
+Using sass-rails 5.0.4
+Using sdoc 0.4.1
+Using spring 1.6.2
+Using sqlite3 1.3.11
+Using uglifier 2.7.2
+Using web-console 2.2.1
+Using will_paginate 3.0.7
+Using will_paginate-bootstrap 1.0.1
+Bundle complete! 22 Gemfile dependencies, 71 gems now installed.
+Gems in the groups production and productio were not installed.
+Use `bundle show [gemname]` to see where a bundled gem is installed.
+bjime488-MacBookPro-MMXV:Pinteresting bjime488$ git push heroku master
+Counting objects: 57, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (49/49), done.
+Writing objects: 100% (57/57), 281.93 KiB | 0 bytes/s, done.
+Total 57 (delta 29), reused 0 (delta 0)
+remote: Compressing source files... done.
+remote: Building source:
+remote: 
+remote: -----> Using set buildpack heroku/ruby
+remote: -----> Ruby app detected
+remote: -----> Compiling Ruby/Rails
+remote: -----> Using Ruby version: ruby-2.2.3
+remote: -----> Installing dependencies using bundler 1.9.7
+remote:        Running: bundle install --without development:test --path vendor/bundle --binstubs vendor/bundle/bin -j4 --deployment
+remote:        You are trying to install in deployment mode after changing
+remote:        your Gemfile. Run `bundle install` elsewhere and add the
+remote:        updated Gemfile.lock to version control.
+remote:        You have added to the Gemfile:
+remote:        * sdoc
+remote:        You have deleted from the Gemfile:
+remote:        * sdoc (~> 0.4.0)
+remote:        Bundler Output: You are trying to install in deployment mode after changing
+remote:        your Gemfile. Run `bundle install` elsewhere and add the
+remote:        updated Gemfile.lock to version control.
+remote:        
+remote:        You have added to the Gemfile:
+remote:        * sdoc
+remote:        
+remote:        You have deleted from the Gemfile:
+remote:        * sdoc (~> 0.4.0)
+remote:  !
+remote:  !     Failed to install gems via Bundler.
+remote:  !
+remote: 
+remote:  !     Push rejected, failed to compile Ruby app
+remote: 
+remote: Verifying deploy...
+remote: 
+remote: !	Push rejected to omr-b.
+remote: 
+To https://git.heroku.com/omr-b.git
+ ! [remote rejected] master -> master (pre-receive hook declined)
+error: failed to push some refs to 'https://git.heroku.com/omr-b.git'
+bjime488-MacBookPro-MMXV:Pinteresting bjime488$ git add .
+bjime488-MacBookPro-MMXV:Pinteresting bjime488$ git commit -am "gseseg"
+[master bc40434] gseseg
+ 1 file changed, 1 insertion(+), 4 deletions(-)
+bjime488-MacBookPro-MMXV:Pinteresting bjime488$ git push
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 318 bytes | 0 bytes/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+To git@github.com:Zealex/pinteresting.git
+   3b5ce15..bc40434  master -> master
+bjime488-MacBookPro-MMXV:Pinteresting bjime488$ git push heroku master
+Counting objects: 59, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (51/51), done.
+Writing objects: 100% (59/59), 282.06 KiB | 0 bytes/s, done.
+Total 59 (delta 30), reused 0 (delta 0)
+remote: Compressing source files... done.
+remote: Building source:
+remote: 
+remote: -----> Using set buildpack heroku/ruby
+remote: -----> Ruby app detected
+remote: -----> Compiling Ruby/Rails
+remote: -----> Using Ruby version: ruby-2.2.3
+remote: -----> Installing dependencies using bundler 1.9.7
+remote:        Running: bundle install --without development:test --path vendor/bundle --binstubs vendor/bundle/bin -j4 --deployment
+remote:        Fetching gem metadata from https://rubygems.org/.............
+remote:        Fetching version metadata from https://rubygems.org/...
+remote:        Fetching dependency metadata from https://rubygems.org/..
+remote:        Using i18n 0.7.0
+remote:        Using rake 10.4.2
+remote:        Using json 1.8.3
+remote:        Using thread_safe 0.3.5
+remote:        Using builder 3.2.2
+remote:        Using erubis 2.7.0
+remote:        Using rack 1.6.4
+remote:        Installing minitest 5.8.3
+remote:        Using arel 6.0.3
+remote:        Using execjs 2.6.0
+remote:        Using bcrypt 3.1.10
+remote:        Installing mime-types 2.99
+remote:        Installing mini_portile2 2.0.0
+remote:        Using thor 0.19.1
+remote:        Installing concurrent-ruby 1.0.0
+remote:        Using orm_adapter 0.5.0
+remote:        Using multi_json 1.11.2
+remote:        Using mimemagic 0.3.0
+remote:        Using pg 0.18.4
+remote:        Using bundler 1.9.7
+remote:        Using rails_serve_static_assets 0.0.4
+remote:        Using rails_stdout_logging 0.0.4
+remote:        Installing coffee-script-source 1.10.0
+remote:        Using will_paginate 3.0.7
+remote:        Installing sass 3.4.20
+remote:        Using tzinfo 1.2.2
+remote:        Using rack-test 0.6.3
+remote:        Using warden 1.2.4
+remote:        Using autoprefixer-rails 6.2.3
+remote:        Using uglifier 2.7.2
+remote:        Using mail 2.6.3
+remote:        Installing tilt 2.0.2
+remote:        Installing rdoc 4.2.1
+remote:        Using rails_12factor 0.0.3
+remote:        Using coffee-script 2.4.1
+remote:        Using will_paginate-bootstrap 1.0.1
+remote:        Using activesupport 4.2.4
+remote:        Using bootstrap-sass 3.3.6
+remote:        Using sdoc 0.4.1
+remote:        Using rails-deprecated_sanitizer 1.0.3
+remote:        Using globalid 0.3.6
+remote:        Using activemodel 4.2.4
+remote:        Using climate_control 0.0.3
+remote:        Installing sprockets 3.5.2
+remote:        Using activejob 4.2.4
+remote:        Using activerecord 4.2.4
+remote:        Using cocaine 0.5.8
+remote:        Using paperclip 4.3.2
+remote:        Installing jbuilder 2.4.0
+remote:        Installing nokogiri 1.6.7.1
+remote:        Using rails-dom-testing 1.0.7
+remote:        Using loofah 2.0.3
+remote:        Using aws-sdk-v1 1.66.0
+remote:        Using rails-html-sanitizer 1.0.2
+remote:        Using actionview 4.2.4
+remote:        Using actionpack 4.2.4
+remote:        Using aws-sdk 1.66.0
+remote:        Using actionmailer 4.2.4
+remote:        Using railties 4.2.4
+remote:        Using responders 2.1.1
+remote:        Using jquery-rails 4.0.5
+remote:        Using masonry-rails 0.2.4
+remote:        Using devise 3.5.3
+remote:        Installing sprockets-rails 3.0.0
+remote:        Using rails 4.2.4
+remote:        Using sass-rails 5.0.4
+remote:        Installing coffee-rails 4.1.1
+remote:        Using turbolinks 2.5.3
+remote:        Using jquery-turbolinks 2.1.0
+remote:        Bundle complete! 22 Gemfile dependencies, 69 gems now installed.
+remote:        Gems in the groups development and test were not installed.
+remote:        Bundled gems are installed into ./vendor/bundle.
+remote:        Post-install message from rdoc:
+remote:        Depending on your version of ruby, you may need to install ruby rdoc/ri data:
+remote:        <= 1.8.6 : unsupported
+remote:        = 1.8.7 : gem install rdoc-data; rdoc-data --install
+remote:        = 1.9.1 : gem install rdoc-data; rdoc-data --install
+remote:        >= 1.9.2 : nothing to do! Yay!
+remote:        Bundle completed (11.59s)
+remote:        Cleaning up the bundler cache.
+remote:        Removing coffee-script-source (1.9.1.1)
+remote:        Removing mime-types (2.6.2)
+remote:        Removing sprockets-rails (2.3.3)
+remote:        Removing tilt (2.0.1)
+remote:        Removing jbuilder (2.3.2)
+remote:        Removing mini_portile (0.6.2)
+remote:        Removing coffee-rails (4.1.0)
+remote:        Removing nokogiri (1.6.6.2)
+remote:        Removing sass (3.4.19)
+remote:        Removing sprockets (3.4.0)
+remote:        Removing minitest (5.8.2)
+remote: -----> Preparing app for Rails asset pipeline
+remote:        Running: rake assets:precompile
+remote:        I, [2016-01-10T23:02:45.835379 #622]  INFO -- : Writing /tmp/build_51156304cd7b010e52eec9f849eac58d/public/assets/application-cb4bc1b04404c833c43805efa585d0107382022272970744d3e97aff426c5046.js.gz
+remote:        I, [2016-01-10T23:02:50.162321 #622]  INFO -- : Writing /tmp/build_51156304cd7b010e52eec9f849eac58d/public/assets/application-845b395dd6ee2c51189507e96944aca4d21c67110d0bc7acada011dec4bf4f45.css.gz
+remote:        I, [2016-01-10T23:02:50.164820 #622]  INFO -- : Writing /tmp/build_51156304cd7b010e52eec9f849eac58d/public/assets/bootstrap/glyphicons-halflings-regular-42f60659d265c1a3c30f9fa42abcbb56bd4a53af4d83d316d6dd7a36903c43e5.svg.gz
+remote:        Asset precompilation completed (8.85s)
+remote:        Cleaning assets
+remote:        Running: rake assets:clean
+remote: 
+remote: ###### WARNING:
+remote:        No Procfile detected, using the default web server (webrick)
+remote:        https://devcenter.heroku.com/articles/ruby-default-web-server
+remote: 
+remote: 
+remote: -----> Discovering process types
+remote:        Procfile declares types     -> (none)
+remote:        Default types for buildpack -> console, rake, web, worker
+remote: 
+remote: -----> Compressing... done, 35.3MB
+remote: -----> Launching...
+remote:        Released v14
+remote:        https://omr-b.herokuapp.com/ deployed to Heroku
+remote: 
+remote: Verifying deploy.... done.
+To https://git.heroku.com/omr-b.git
+   6f19caa..bc40434  master -> master
+bjime488-MacBookPro-MMXV:Pinteresting bjime488$ heroku open
+Opening omr-b... done
+bjime488-MacBookPro-MMXV:Pinteresting bjime488$ 
