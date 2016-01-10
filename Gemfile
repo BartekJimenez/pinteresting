@@ -14,9 +14,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'devise', '~> 3.5.2'
 gem 'paperclip', '~> 4.2'
 gem 'aws-sdk', '< 2.0'
-gem 'masonry-rails', '~> 0.2.0'
-gem 'will_paginate', '~> 3.0.5'
-gem 'will_paginate-bootstrap'
+#gem 'masonry-rails', '~> 0.2.0'
+#gem 'will_paginate', '~> 3.0.5'
+#gem 'will_paginate-bootstrap'
 
 group :development, :test do
 	gem 'sqlite3'
