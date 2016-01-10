@@ -78,7 +78,7 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   #required for heroku - change to host name later on
-config.action_mailer.default_url_options = { host: => 'pinteresting-b.herokuapp.com' }
+config.action_mailer.default_url_options = { host: => 'omr-b.herokuapp.com' }
 
 #set paperclip to upload images to Amazon s3
 config.paperclip_defaults = {
