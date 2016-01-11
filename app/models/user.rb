@@ -7,6 +7,8 @@ class User < ActiveRecord::Base
 
    has_many :pins
 
+    validates :name, presence: true
+
 #prevent making a bad p/w         
 #  validates :password, :presence => true,
 #             :on => :create,
